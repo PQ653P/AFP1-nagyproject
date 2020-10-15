@@ -9,4 +9,4 @@ Létrehoztuk a Trello táblát és hozzáadtuk a tagokat. Később felvettük az
 
 Árvai Dániel, Pusztai Dominik:
 
-Létrehoztuk a git repót és hozzáadtuk a tagokat.
+Létrehoztuk a git repót és hozzáadtuk a tagokat. Létrehoztuka dokumentációs fájlokat.
