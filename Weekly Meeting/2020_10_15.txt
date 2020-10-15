@@ -1,8 +1,12 @@
 Árvai Dániel, Pusztai Dominik, Koplányi Balázs, Lehóczky Csaba:
 
-Mindannyian kitaláltunk egy ötletet és végül szavazás (és relevancia) szerint 
+Mindannyian kitaláltunk egy ötletet és végül szavazás (és relevancia) szerint
 (és a seniorok segítségével) kiválasztottuk a megfelelő ötletet a projectünknek.
 
 Lehóczky Csaba, Koplányi Balázs:
 
-Létrehoztuk a Trello táblát és hozzáadtuk a tagokat. Később felvettük az alapvető feladatokat. 
+Létrehoztuk a Trello táblát és hozzáadtuk a tagokat. Később felvettük az alapvető feladatokat.
+
+Árvai Dániel, Pusztai Dominik:
+
+Létrehoztuk a git repót és hozzáadtuk a tagokat.
