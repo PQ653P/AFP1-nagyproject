@@ -7,3 +7,9 @@ A játékhoz tartozni fog egy szabályrendszer ahonnan az is meg tudja tanulni a
 A játékban a játékos legnagyobb képessége a valószínűségszámítás lesz, így amelyik játékosnak jobb matematika tudása van, nagyobb eséllyel nyer.
 A játékos a gép és később más játékos ellen is megméretettheti a kártyajátékban szerzett tapasztalatait.
 A játékot webes felületen fogjuk elkészíteni, regisztráció és belépés után játszhatunk is a játékkal. 
+
+2.Jelenlegi helyzet
+A megrendelő egy szimpla kártyajátékot szeretne, amin egyszerűen és gyorsan tud a nemzetközi szabályok szerint játszani, így a blackjack-re jutott a választás.
+Az említett alkalmazást a megrendelő webes felületen szeretné használni, regisztrációval és belépést követően.
+Az ügyfél ragaszkodott egy egyszerű de mindent átfogó szabályzati oldalhoz, ahol aki nem ért a játékhoz, megtudja tanulni az alapokat.
+Jelenleg a program létrehozásához, elkészítéséhez szükséges adatokat, tevékenységeket egyeztetjük.
