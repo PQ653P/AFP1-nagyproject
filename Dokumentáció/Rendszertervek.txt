@@ -1,0 +1,9 @@
+Rendszertervek
+
+1.Rendszer célja
+A rendszer célja, hogy a játékos legyőzze az ellenfelét Blackjack játékban.
+A játékos képes tétet tenni, ahogy az ellenfele is, aki nyer az viszi mindet amit feltettek tétnek, és az hozzá lesz adva a nyertes számlájára.
+A játékhoz regisztrálni kell és belépni, hogy használjuk.
+A számla egyenlege minden játék után mentésre kerül, így ha újra játszani szeretnénk akkor ugyanonnan kezdhetjük ahol befejeztük.
+A játék a hagyományos Huszonegy szabályai szerint lesz értelmezve, a szabályokat a "Szabályok" oldalon lehet megtalálni és elolvasni.
+Ha a játékosnak elfogy az egyenlege akkor újra kell kezdenie a játékot, a cél, hogy elnyerjük ellenfelünk összes zsetonját.
