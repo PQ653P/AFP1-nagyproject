@@ -19,3 +19,7 @@ A csoport célja egy valósággal megegyező Blackjacket létrehozni , melynek a
 hogy a játékmenet során a játékosnál lévő lapok összértéke több legyen az osztó lapjainak összértékénél, anélkül, hogy meghaladná a 21-et.
 Az "asztaloknál" egyértelműen látható, hogy mekkora a minimális és a maximális tét, mely a játékos által felrakható. 
 A játék kezdetén a játékosok beteszik a tétjüket az úgynevezett fogadó zónájukba , és aki nyer , az nyeri az összes tétet.
+	
+4.Feltételek
+Az alkalamazásunk létrehozásának alapfeltétele, a Python , vagy valamilyen más programozási nyelv.
+SQL adatbázis , ahol elmentjük a regisztrált adatokat és a zsetonok számát.
