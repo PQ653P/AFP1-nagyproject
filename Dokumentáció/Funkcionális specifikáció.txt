@@ -21,5 +21,5 @@ Az "asztaloknál" egyértelműen látható, hogy mekkora a minimális és a maxi
 A játék kezdetén a játékosok beteszik a tétjüket az úgynevezett fogadó zónájukba , és aki nyer , az nyeri az összes tétet.
 	
 4.Feltételek
-Az alkalamazásunk létrehozásának alapfeltétele, a Python , vagy valamilyen más programozási nyelv.
+Az alkalmazásunk létrehozásának alapfeltétele, a Python , vagy valamilyen más programozási nyelv.
 SQL adatbázis , ahol elmentjük a regisztrált adatokat és a zsetonok számát.
