@@ -3,3 +3,6 @@
 Koplányi Balázs:
 - A funkcionális specifikáción belül vágyálom rendszer megírása.
 - Feltételek megírása az alkalmazás létrehozásához.
+
+Lehóczky Csaba:
+Feladatként a Rendszertervek első bekezdését és a Követelmény specifikáció első bekezdését dolgoztam ki, és írtam le.
