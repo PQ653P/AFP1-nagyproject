@@ -13,3 +13,9 @@ A megrendelő egy szimpla kártyajátékot szeretne, amin egyszerűen és gyorsa
 Az említett alkalmazást a megrendelő webes felületen szeretné használni, regisztrációval és belépést követően.
 Az ügyfél ragaszkodott egy egyszerű de mindent átfogó szabályzati oldalhoz, ahol aki nem ért a játékhoz, megtudja tanulni az alapokat.
 Jelenleg a program létrehozásához, elkészítéséhez szükséges adatokat, tevékenységeket egyeztetjük.
+
+3.Vágyálom rendszer
+A csoport célja egy valósággal megegyező Blackjacket létrehozni , melynek alapszabálya , 
+hogy a játékmenet során a játékosnál lévő lapok összértéke több legyen az osztó lapjainak összértékénél, anélkül, hogy meghaladná a 21-et.
+Az "asztaloknál" egyértelműen látható, hogy mekkora a minimális és a maximális tét, mely a játékos által felrakható. 
+A játék kezdetén a játékosok beteszik a tétjüket az úgynevezett fogadó zónájukba , és aki nyer , az nyeri az összes tétet.
