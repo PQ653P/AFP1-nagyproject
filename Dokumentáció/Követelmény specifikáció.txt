@@ -1,0 +1,8 @@
+Követelmény specifikáció
+
+1. Jelenlegi helyzet
+Mivel a csoport tagjai szeretik a kártyajátékokat (főleg a tétre menő, szerencsejátékokat) ezért úgy döntöttünk megalkotjuk a saját Blackjack játékunkat.
+A játékhoz regisztrálni kell, és ahhoz hogy játszunk be kell jelentkezni, hogy az aktuális állást el lehessen menteni.
+Sok helyen láttuk, hogy nem lehet normális tétet tenni, vagy nem is lehet tétet tenni egyáltalán. Ezért úgy gondoltuk, 
+hogy megalkotjuk a saját játékunkat úgy ahogy mi szeretnénk, beleértve a játék technikáját és az egyenleg rendszert.
+Pár helyen aggály volt a játék kinézete és dizájnja, ezért mi úgy gondoltuk, hogy megcsinálunk egy egyszerű, de igényes Blackjack játékot.
