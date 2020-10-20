@@ -31,3 +31,7 @@ ezeknek a hátránya:
 	- Személyazonosság kiadása
 	- Bankkártya használata
 Ezért arra jutottunk, hogy egy ingyenes, könnyű regisztrációs , szerencsén alapuló alkalmi játékot létrehozzunk.
+
+6. Igényelt üzleti folyamatok modellje
+Ezt a programot azért hozzuk létre, hogy a (szerencsejátékot szerető) emberek a szabad időjükben tudjanak játszani költségvetés, és személyi adatok kiadása nélkül. A projektünk egy adatbázissal lesz kapcsolatban, mely lokális módon lesz majd elérhető, egy adott hálózaton keresztül.
+A könnyű regisztrációs előnynek köszönhetően, percek alatt már a játék felületet tudjuk kezelni, a zsetonok száma mentésre kerül, ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot.
