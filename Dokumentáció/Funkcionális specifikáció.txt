@@ -1,4 +1,4 @@
-Funkcionális specifikáció
+﻿Funkcionális specifikáció
 
 1. Bevezetés
 A csoport tagjai gyakran szoktat játszani a világhírű 'Huszonegy' nevezetű játékkal (angolul Blackjack), 
@@ -23,3 +23,11 @@ A játék kezdetén a játékosok beteszik a tétjüket az úgynevezett fogadó 
 4.Feltételek
 Az alkalmazásunk létrehozásának alapfeltétele, a Python , vagy valamilyen más programozási nyelv.
 SQL adatbázis , ahol elmentjük a regisztrált adatokat és a zsetonok számát.
+
+5.Jelenlegi üzleti folyamatok modellje
+A mai világban a legtöbb embernek nincs elegendő pénzbeli háttere ahhoz, hogy egy élvezhető, szerencsén alapuló, könnyen kezelhető alkalmi játékkal játsszon, anélkül hogy ki kellene mozdulnia az illető komfortzónájából, bár van egy csomó online felületen elérhető ”szerencsejáték”- okkal foglalkozó weboldal,
+ezeknek a hátránya:
+	- Bonyolult regisztráció
+	- Személyazonosság kiadása
+	- Bankkártya használata
+Ezért arra jutottunk, hogy egy ingyenes, könnyű regisztrációs , szerencsén alapuló alkalmi játékot létrehozzunk.
