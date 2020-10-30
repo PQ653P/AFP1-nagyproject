@@ -8,3 +8,4 @@ Fogalom szótárát dolgoztam ki.
 - Követelmény specifikáció: üzleti modell kidolgozása.
 - Rendszertervek: Funkcionális terv kidolgozása.
 - Rendszertervek: Fizikai környezet kidolgozása.
+- Rendszertervek: Architekturális terv kidolgozása.
