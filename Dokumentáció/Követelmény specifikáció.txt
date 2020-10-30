@@ -6,3 +6,13 @@ A játékhoz regisztrálni kell, és ahhoz hogy játszunk be kell jelentkezni, h
 Sok helyen láttuk, hogy nem lehet normális tétet tenni, vagy nem is lehet tétet tenni egyáltalán. Ezért úgy gondoltuk, 
 hogy megalkotjuk a saját játékunkat úgy ahogy mi szeretnénk, beleértve a játék technikáját és az egyenleg rendszert.
 Pár helyen aggály volt a játék kinézete és dizájnja, ezért mi úgy gondoltuk, hogy megcsinálunk egy egyszerű, de igényes Blackjack játékot.
+-------------------------------------------------------------------------------
+2.Vágyálomrendszer
+A project célja, egy olyan játék készítése, amit egy gyors regisztráció 
+után, könnyűszerrel elérhető a felhasználók számára. Törekszünk egy 
+letisztult, igényes, szabálytartó és mind ezek mellett egy szórakoztató 
+játék létrehozására. Melyben a játékos megismerheti a Blackjack 
+játékszabályait, kedvére kamatoztathatja szerencséjét, és boldog órákat 
+tölthet el. A rendszer a felhasználó igényeit helyezi középpontba 
+azáltal, hogy egy letisztult, egyszerűen kezelhető felületet biztosít 
+számukra. A mai rohanó világban, az embernek, se ideje, se kedve elrohanni a legközelebbi szerencsejáték zrt.-hez, hogy pénzért szórakozhasson, ezért törekedtünk a teljesen ingyenes, mégis a valóságon alapuló modell megalkotására. Pontozás is jelen lesz a weblapon, ennek hatására a játékosokat tudjuk buzdítani a játékra, mindezek mellett versengeni tudnak egymással, és akik a tabella elején (azaz nekik van a legtöbb "zsetonjuk"= pontjuk) állnak , a későbbiekben plussz jutalomban részesítjük őket pl.:(egyedi kártya hátlap design).
