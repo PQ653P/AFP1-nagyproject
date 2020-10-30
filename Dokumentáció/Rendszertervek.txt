@@ -7,3 +7,17 @@ A játékhoz regisztrálni kell és belépni, hogy használjuk.
 A számla egyenlege minden játék után mentésre kerül, így ha újra játszani szeretnénk akkor ugyanonnan kezdhetjük ahol befejeztük.
 A játék a hagyományos Huszonegy szabályai szerint lesz értelmezve, a szabályokat a "Szabályok" oldalon lehet megtalálni és elolvasni.
 Ha a játékosnak elfogy az egyenlege akkor újra kell kezdenie a játékot, a cél, hogy elnyerjük ellenfelünk összes zsetonját.
+
+4. Funkcionális terv
+    Rendszerszereplők:
+        - Játékos
+        - Admin
+    Rendszerhasználati esetek és lefutásaik:
+        Játékos:
+            - Regisztráció az oldalra
+            - Saját adatainak módosítása
+            - Regisztráció törlése
+            - A játékban való részvétel
+        Admin:
+            - Minden adathoz hozzáfér
+            - Felhasználok adatainak módosítása

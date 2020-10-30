@@ -1,5 +1,9 @@
 2020.10.30
 
 Pusztai Dominik Tamás:
-- Feladatként a Követelmény specifikáció, Vágyálom rendszerét, illetve a 
+- Feladatként a Követelmény specifikáció, Vágyálom rendszerét, illetve a
 Fogalom szótárát dolgoztam ki.
+
+Árvai Dániel:
+- Követelmény specifikáció: üzleti modell kidolgozása.
+- Rendszertervek: Funkcionális terv kidolgozása.
