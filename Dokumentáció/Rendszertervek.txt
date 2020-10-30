@@ -21,3 +21,12 @@ Ha a játékosnak elfogy az egyenlege akkor újra kell kezdenie a játékot, a c
         Admin:
             - Minden adathoz hozzáfér
             - Felhasználok adatainak módosítása
+
+5. Fizikai környezet
+Az alkalmazás webes platformra készül.
+Van tűzfal a hálózaton és engedélyezi a 80-as (HTTP) és a 443-as (HTTPS) portokat.
+Nincsenek megvásárolt komponenseink.
+Fejlesztői eszközök:
+    - Visual Studio Code / Netbeans / IntelliJ WebStorm
+    - WAMP server
+    - git

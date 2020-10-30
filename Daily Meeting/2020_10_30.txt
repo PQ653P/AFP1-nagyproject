@@ -7,3 +7,4 @@ Fogalom szótárát dolgoztam ki.
 Árvai Dániel:
 - Követelmény specifikáció: üzleti modell kidolgozása.
 - Rendszertervek: Funkcionális terv kidolgozása.
+- Rendszertervek: Fizikai környezet kidolgozása.
