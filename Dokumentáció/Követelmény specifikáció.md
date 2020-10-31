@@ -1,13 +1,14 @@
-﻿Követelmény specifikáció
+﻿# Követelmény specifikáció
 
-1. Jelenlegi helyzet
+## 1. Jelenlegi helyzet
 Mivel a csoport tagjai szeretik a kártyajátékokat (főleg a tétre menő, szerencsejátékokat) ezért úgy döntöttünk megalkotjuk a saját Blackjack játékunkat.
 A játékhoz regisztrálni kell, és ahhoz hogy játszunk be kell jelentkezni, hogy az aktuális állást el lehessen menteni.
 Sok helyen láttuk, hogy nem lehet normális tétet tenni, vagy nem is lehet tétet tenni egyáltalán. Ezért úgy gondoltuk,
 hogy megalkotjuk a saját játékunkat úgy ahogy mi szeretnénk, beleértve a játék technikáját és az egyenleg rendszert.
 Pár helyen aggály volt a játék kinézete és dizájnja, ezért mi úgy gondoltuk, hogy megcsinálunk egy egyszerű, de igényes Blackjack játékot.
--------------------------------------------------------------------------------
-2.Vágyálomrendszer
+
+## 2. Vágyálomrendszer
+
 A project célja, egy olyan játék készítése, amit egy gyors regisztráció
 után, könnyűszerrel elérhető a felhasználók számára. Törekszünk egy
 letisztult, igényes, szabálytartó és mind ezek mellett egy szórakoztató
@@ -20,8 +21,9 @@ hogy pénzért szórakozhasson, ezért törekedtünk a teljesen ingyenes, mégis
 Pontozás is jelen lesz a weblapon, ennek hatására a játékosokat tudjuk buzdítani a játékra, mindezek mellett versengeni tudnak egymással,
 és akik a tabella elején (azaz nekik van a legtöbb "zsetonjuk"= pontjuk)
 állnak, a későbbiekben plussz jutalomban részesítjük őket pl.:(egyedi kártya hátlap design).
--------------------------------------------------------------------------------
-3. Jelenlegi üzleti folyamatok modellje
+
+## 3. Jelenlegi üzleti folyamatok modellje
+
 A mai világban a legtöbb embernek nincs elegendő pénzbeli háttere ahhoz, hogy egy élvezhető, szerencsén alapuló, könnyen kezelhető alkalmi játékkal játsszon, anélkül hogy ki kellene mozdulnia az illető komfortzónájából, bár van egy csomó online felületen elérhető ”szerencsejáték”- okkal foglalkozó weboldal,
 ezeknek a hátránya:
 	- Bonyolult regisztráció
@@ -31,14 +33,16 @@ Ezért arra jutottunk, hogy egy ingyenes, könnyű regisztrációs , szerencsén
 4. igényeit üzleti folyamatok modellje
 Ezt a programot azért hozzuk létre, hogy a (szerencsejátékot szerető) emberek a szabad időjükben tudjanak játszani költségvetés, és személyi adatok kiadása nélkül. A projektünk egy adatbázissal lesz kapcsolatban, mely lokális módon lesz majd elérhető, egy adott hálózaton keresztül.
 A könnyű regisztrációs előnynek köszönhetően, percek alatt már a játék felületet tudjuk kezelni, a zsetonok száma mentésre kerül, ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot, ennek köszönhetően a felhasználók nagyobb kedvvel fogják alkalmazni a program adta lehetőségeket.
-5.Fogalomszótár
-5.1.1 Blackjack (huszonegy)
+
+## 5.Fogalomszótár
+
+### 5.1.1 Blackjack (huszonegy)
 
 A huszonegy egy kártyajáték, melyet 52 lapos francia kártyával játszanak
 dzsókerek nélkül. Blackjack néven is ismert. A játék célja, hogy a játékos
 lapjai összértéke minél közelebb legyen a huszonegyhez, de azt ne lépje túl.
 
-5.1.2 Általános játékszabály
+### 5.1.2 Általános játékszabály
 
 A blackjack minden egyes körében az asztalnál ülő játékosok azzal kezdenek,
 hogy betesznek egy tétet a saját megfelelő tétpozíciójukra, amit „doboz”-nak is
@@ -69,37 +73,38 @@ kezed értéke öt vagy 15 lehet.
 A blackjackben általában egy az egyhez (1:1) fizetnek a nyerő lapok. Amikor a kezed értéke megegyezik az osztóéval, azt „döntetlen”-nek hívják. Ha ez
 történik, visszakapod a tétedet, de további pénzre nem számíthatsz.
 
-5.1.3 A játék végeredménye
- -Ha a játékos lapjainak összértéke közelebb van a 21-hez, mint az osztóé,
+### 5.1.3 A játék végeredménye
+
+- Ha a játékos lapjainak összértéke közelebb van a 21-hez, mint az osztóé,
 akkor a játékos a tétet 2:1 arányban kapja meg.
 
- -Ha az osztó lapjainak összértéke közelebb van a 21-hez, mint a játékosé,
+- Ha az osztó lapjainak összértéke közelebb van a 21-hez, mint a játékosé,
 akkor a játékos elvesztette a tétet.
 
- -Ha a játékos és az osztó lapjainak összértéke egyforma, akkor az állás
+- Ha a játékos és az osztó lapjainak összértéke egyforma, akkor az állás
 döntetlen (Push), a megtett tétet visszakapja a játékos.
 
- -Ha a játékos lapjainak összértéke a játék során a 21-et meghaladja (Bust),
+- Ha a játékos lapjainak összértéke a játék során a 21-et meghaladja (Bust),
 akkor a játékos elvesztette a tétet, az osztó későbbi eredményétől függetlenül.
 
- -Ha az osztó lapjainak összértéke a játék során a 21-et meghaladja (Bust),
+- Ha az osztó lapjainak összértéke a játék során a 21-et meghaladja (Bust),
 akkor a játékos a tétet 2:1 arányban kapja meg.
 
- -Ha a játékos az első két lapjának összértéke pontosan 21 (Blackjack), és az
+- Ha a játékos az első két lapjának összértéke pontosan 21 (Blackjack), és az
 osztó nem Blackjack-et ért el, akkor a játékos a megtett tétet 3:2 arányban kapja meg.
 
-5.1.2 Kifejezések:
+### 5.1.2 Kifejezések:
 
- -Játékmenet - A fentebb említett játék lefolyásának folyamata.
+- Játékmenet - A fentebb említett játék lefolyásának folyamata.
 
- -HTML - HyperText Makeup Language - magyarul: hiperszöveges jelölőnyelv - weboldalak készítéséhez kifejlesztett leírónyelv.
+- HTML - HyperText Makeup Language - magyarul: hiperszöveges jelölőnyelv - weboldalak készítéséhez kifejlesztett leírónyelv.
 
- -CSS - Cascading Style Sheets - magyarul: egymásba ágyazott stílusalapok - weboldalak külleméhez kifejlesztett stílusleíró nyelv.
+- CSS - Cascading Style Sheets - magyarul: egymásba ágyazott stílusalapok - weboldalak külleméhez kifejlesztett stílusleíró nyelv.
 
 - PHP - Elterjedt nyílt forráskódú szerver-oldali programozási nyelv, amely az SSI (Server Side Includes) és a Perl ötvözésére hivatott.
 
- -Front-End - Egy adott rendszer legfelsőbb, a felhasználóval kapcsolatot táró rétege, amelynek feladata a rendszerből kijutó adatok megjelenítése, prezentálása, illetve a bejövő adatok fogadása.
+- Front-End - Egy adott rendszer legfelsőbb, a felhasználóval kapcsolatot táró rétege, amelynek feladata a rendszerből kijutó adatok megjelenítése, prezentálása, illetve a bejövő adatok fogadása.
 
- -Back-End - Egy adott rendszer alsóbb rétege, aminek feladata a front-end réteg felől érkező adatok feldolgozása, valamint a keletkezett eredmény front-end számára történő visszajuttatása.
+- Back-End - Egy adott rendszer alsóbb rétege, aminek feladata a front-end réteg felől érkező adatok feldolgozása, valamint a keletkezett eredmény front-end számára történő visszajuttatása.
 
- -Supervisor - Angol szó magyarul felügyelő. A projekt szempontjából olyan személy(ek) aki(k) a fejlesztési folyamatokat felügyelik.
+- Supervisor - Angol szó magyarul felügyelő. A projekt szempontjából olyan személy(ek) aki(k) a fejlesztési folyamatokat felügyelik.

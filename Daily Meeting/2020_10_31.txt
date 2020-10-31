@@ -3,3 +3,6 @@
 Pusztai Dominik Tamás:
 - Rendszertervek: Project terv kidolgozása.
 - Rendszertervek: Követelmények kidolgozása.
+
+Árvai Dániel:
+- A dokumentációs fájlok markdown formátumra konvertálása.
