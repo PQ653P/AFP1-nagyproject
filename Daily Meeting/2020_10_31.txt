@@ -6,3 +6,6 @@ Pusztai Dominik Tamás:
 
 Árvai Dániel:
 - A dokumentációs fájlok markdown formátumra konvertálása.
+
+Lehóczky Csaba:
+- A rendszertervek dokumentum következő bekezdésének megírása. 
