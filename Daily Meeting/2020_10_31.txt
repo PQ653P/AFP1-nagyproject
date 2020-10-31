@@ -12,3 +12,4 @@ Lehóczky Csaba:
 
 Koplányi Balázs:
 - Rendszertervek: Telepítési terv kidolgozása.
+- Rendszertervek: Karbantartási terv kidolgozása.
