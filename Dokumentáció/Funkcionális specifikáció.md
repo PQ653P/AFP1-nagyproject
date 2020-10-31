@@ -26,7 +26,7 @@ A játék kezdetén a játékosok beteszik a tétjüket az úgynevezett fogadó 
 
 ## 4. Feltételek
 
-Az alkalmazásunk létrehozásának alapfeltétele, a Python , vagy valamilyen más programozási nyelv.
+Az alkalmazásunk létrehozásának alapfeltétele, a JavaScript , vagy valamilyen más programozási nyelv.
 SQL adatbázis, ahol elmentjük a regisztrált adatokat és a zsetonok számát.
 
 ## 5. Jelenlegi üzleti folyamatok modellje
