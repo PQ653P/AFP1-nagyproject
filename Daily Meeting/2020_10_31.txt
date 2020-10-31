@@ -9,3 +9,6 @@ Pusztai Dominik Tamás:
 
 Lehóczky Csaba:
 - A rendszertervek dokumentum következő bekezdésének megírása. 
+
+Koplányi Balázs:
+- Rendszertervek: Telepítési terv kidolgozása.
