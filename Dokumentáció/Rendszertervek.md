@@ -95,5 +95,5 @@ módosíthassák az adatokat.
 Az alkalmazás elkészítése során szükség van a folyamatos tesztelésre.\
 Tesztelni kell a gombok működését, valamint a pontszám változását, ha a játékos vagy a gép nyer, illetve az új játék kezdésénél a pontszám nullázását.\
 Tesztelni kell, hogy a dizájn megjelenik-e és/vagy úgy jelenik meg ahogy mi szerettük volna, és változtatás esetén megváltozik-e mindenhol ahol szerettük volna.\
-Azt is tesztelni kell, hogy az adatbázis megfelelően dolgozik azaz megfelelően tárolja el a dolgokat.\ 
+Azt is tesztelni kell, hogy az adatbázis megfelelően dolgozik azaz megfelelően tárolja el a dolgokat.
 A maradék backend kódokat is többszörösen kell tesztelni, hogy megfelelően működnek-e.
