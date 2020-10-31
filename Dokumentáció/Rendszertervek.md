@@ -102,3 +102,8 @@ A maradék backend kódokat is többszörösen kell tesztelni, hogy megfelelően
 
 Az alkalmazás futtatásához egy általános felhasználású böngészőre van szükség.\
 Az alkalmazás használatához regisztrációra van szükség, melybe később be kell jelentkezni.
+
+## 9. Karbantartási terv
+
+Az alkalmazás bővítési lehetőségét fenntartjuk. A későbbiekben 3 játékos mód is hozzáadható.\
+A későbbiekben a megnyert zsetonokat majd el is lehet költeni a játékon belül.
