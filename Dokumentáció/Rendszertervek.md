@@ -89,3 +89,7 @@ A webalkalmazás JavaScript haszálatával készül el.
 A REST API-hoz a user belépését követően egyedi api-key segítségével
 lehet hozzáférni, ez biztosítja, hogy illetéktelen felhasználok ne
 módosíthassák az adatokat.
+
+## 7. Tesztterv
+
+Az alkalmazás elkészítése során szükség van a folyamatos tesztelésre.
