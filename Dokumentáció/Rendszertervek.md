@@ -97,3 +97,8 @@ Tesztelni kell a gombok működését, valamint a pontszám változását, ha a 
 Tesztelni kell, hogy a dizájn megjelenik-e és/vagy úgy jelenik meg ahogy mi szerettük volna, és változtatás esetén megváltozik-e mindenhol ahol szerettük volna.\
 Azt is tesztelni kell, hogy az adatbázis megfelelően dolgozik azaz megfelelően tárolja el a dolgokat.
 A maradék backend kódokat is többszörösen kell tesztelni, hogy megfelelően működnek-e.
+
+## 8. Telepítési terv
+
+Az alkalmazás futtatásához egy általános felhasználású böngészőre van szükség.\
+Az alkalmazás használatához regisztrációra van szükség, melybe később be kell jelentkezni.
