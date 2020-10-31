@@ -26,9 +26,10 @@ Pontozás is jelen lesz a weblapon, ennek hatására a játékosokat tudjuk buzd
 
 A mai világban a legtöbb embernek nincs elegendő pénzbeli háttere ahhoz, hogy egy élvezhető, szerencsén alapuló, könnyen kezelhető alkalmi játékkal játsszon, anélkül hogy ki kellene mozdulnia az illető komfortzónájából, bár van egy csomó online felületen elérhető ”szerencsejáték”- okkal foglalkozó weboldal,
 ezeknek a hátránya:
-	- Bonyolult regisztráció
-	- Személyazonosság kiadása
-	- Bankkártya használata
+- Bonyolult regisztráció
+- Személyazonosság kiadása
+- Bankkártya használata
+
 Ezért arra jutottunk, hogy egy ingyenes, könnyű regisztrációs , szerencsén alapuló alkalmi játékot létrehozzunk.
 
 ## 4. Igényelt üzleti folyamatok modellje
