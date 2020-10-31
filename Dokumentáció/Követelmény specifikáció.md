@@ -9,7 +9,7 @@ Pár helyen aggály volt a játék kinézete és dizájnja, ezért mi úgy gondo
 
 ## 2. Vágyálomrendszer
 
-A project célja, egy olyan játék készítése, amit egy gyors regisztráció
+A projekt célja, egy olyan játék készítése, amit egy gyors regisztráció
 után, könnyűszerrel elérhető a felhasználók számára. Törekszünk egy
 letisztult, igényes, szabálytartó és mind ezek mellett egy szórakoztató
 játék létrehozására. Melyben a játékos megismerheti a Blackjack

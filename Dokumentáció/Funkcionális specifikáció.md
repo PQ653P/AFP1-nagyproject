@@ -3,7 +3,7 @@
 ## 1. Bevezetés
 
 A csoport tagjai gyakran szoktat játszani a világhírű 'Huszonegy' nevezetű játékkal (angolul Blackjack),
-így úgy gondoltuk, hogy ez egy megfelelő ötlet lenne a projectnek.
+így úgy gondoltuk, hogy ez egy megfelelő ötlet lenne a projektnek.
 A játékhoz tartozni fog egy szabályrendszer ahonnan az is meg tudja tanulni a játék alapjait aki soha életében nem játszott huszoneggyet.
 A játékban a játékos legnagyobb képessége a valószínűségszámítás lesz, így amelyik játékosnak jobb matematika tudása van, nagyobb eséllyel nyer.
 A játékos a gép és később más játékos ellen is megméretettheti a kártyajátékban szerzett tapasztalatait.
