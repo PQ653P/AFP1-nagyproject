@@ -56,3 +56,13 @@ A Játékos az alábbi tevékenységeket végezheti:
 - A játékot bármely pillanatban abbahagyhatja az oldal bezárásával, ilyenkor automatikusan kilép a bejelentkezett fiókból, a bejelentkezetett fiók zsetonjainak száma mentődik.
 - Lehetősége van játék közben használni a súgót, mely megjeleníti melyik lap, mennyi pontot ér.
 - Két kártyás huszonegy (blackjack) esetén a feltett tét háromszorosát nyeri a játékos.
+
+## 8. Képernyőtervek
+
+Fontosabb képernyők:
+- regisztráció / bejelentkezés
+![](img/register_login.png)
+- adatmódosítás
+![](img/profile.png)
+- játék
+![](img/game.png)
