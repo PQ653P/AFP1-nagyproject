@@ -1,0 +1,3 @@
+Árvai Dániel, Pusztai Dominik, Koplányi Balázs, Lehóczky Csaba:
+Átnéztük a dokumentációkat, és ahol lehetett javítottuk a hibákat. 
+Még egyszer átbeszéltük a projekt munkamegosztását, és fixáltuk azokat a munkakövetőrendszerben.
