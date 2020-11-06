@@ -4,3 +4,6 @@ Még egyszer átbeszéltük a projekt munkamegosztását, és fixáltuk azokat a
 
 Árvai Dániel, Pusztai Dominik:
 Átbeszéltük a Backend fejlesztés lépéseit és megvalósítását.
+
+Lehóczky Csaba, Koplányi Balázs:
+Szóban megterveztük a frontend fejlesztés lépéseit és kinézeteit.
