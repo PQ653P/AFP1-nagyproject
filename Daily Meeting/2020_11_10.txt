@@ -3,3 +3,6 @@
 Lehóczky Csaba:
 -menu.html létrehozása
 -HTML rész kidolgozása 
+
+Koplányi Balázs:
+-menu.html szerkesztése
