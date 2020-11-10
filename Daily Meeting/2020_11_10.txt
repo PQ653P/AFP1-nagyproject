@@ -2,3 +2,4 @@
 
 Lehóczky Csaba:
 -menu.html létrehozása
+-HTML rész kidolgozása 
