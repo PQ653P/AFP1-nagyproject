@@ -50,15 +50,18 @@ A weboldal használatához egy egyszerű böngészőre van szükség.
 ## 4. Funkcionális terv
 
 Rendszerszereplők:
+
 - Játékos
 - Admin
 
 Rendszerhasználati esetek és lefutásaik:
+
 - Játékos:
     - Regisztráció az oldalra
     - Saját adatainak módosítása
     - Regisztráció törlése
     - A játékban való részvétel
+	
 - Admin:
     - Minden adathoz hozzáfér
     - Felhasználok adatainak módosítása
@@ -69,6 +72,7 @@ Az alkalmazás webes platformra készül.
 Van tűzfal a hálózaton és engedélyezi a 80-as (HTTP) és a 443-as (HTTPS) portokat.
 Nincsenek megvásárolt komponenseink.
 Fejlesztői eszközök:
+
     - Visual Studio Code / Netbeans / IntelliJ WebStorm
     - WAMP server
     - git
