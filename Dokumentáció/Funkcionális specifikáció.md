@@ -28,6 +28,9 @@ A játék kezdetén a játékosok beteszik a tétjüket az úgynevezett fogadó 
 
 Az alkalmazásunk létrehozásának alapfeltétele, a JavaScript , vagy valamilyen más programozási nyelv.
 SQL adatbázis, ahol elmentjük a regisztrált adatokat és a zsetonok számát.
+HTML-ben írjuk meg az oldal leíró részét, és ezzel szabványosítjuk.
+CSS-el adunk az oldalunknak külsőt, amivel igényesen és dizájnosan fog kinézni. 
+
 
 ## 5. Jelenlegi üzleti folyamatok modellje
 
