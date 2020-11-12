@@ -9,6 +9,7 @@ A játékban a játékos legnagyobb képessége a valószínűségszámítás le
 A játékos a gép és később más játékos ellen is megméretettheti a kártyajátékban szerzett tapasztalatait.
 A játékot webes felületen fogjuk elkészíteni, regisztráció és belépés után játszhatunk is a játékkal.
 
+
 ## 2. Jelenlegi helyzet
 
 A megrendelő egy szimpla kártyajátékot szeretne, amin egyszerűen és gyorsan tud a nemzetközi szabályok szerint játszani, így a blackjack-re jutott a választás.
@@ -25,6 +26,7 @@ hogy a játékmenet során a játékosnál lévő lapok összértéke több legy
 Az "asztaloknál" egyértelműen látható, hogy mekkora a minimális és a maximális tét, mely a játékos által felrakható.
 A játék kezdetén a játékosok beteszik a tétjüket az úgynevezett fogadó zónájukba , és aki nyer , az nyeri az összes tétet.
 
+
 ## 4. Feltételek
 
 Az alkalmazásunk létrehozásának alapfeltétele, a JavaScript , vagy valamilyen más programozási nyelv.
@@ -35,7 +37,8 @@ CSS-el adunk az oldalunknak külsőt, amivel igényesen és dizájnosan fog kin�
 
 ## 5. Jelenlegi üzleti folyamatok modellje
 
-A mai világban a legtöbb embernek nincs elegendő pénzbeli háttere ahhoz, hogy egy élvezhető, szerencsén alapuló, könnyen kezelhető alkalmi játékkal játsszon, anélkül hogy ki kellene mozdulnia az illető komfortzónájából, bár van egy csomó online felületen elérhető ”szerencsejáték”- okkal foglalkozó weboldal,
+A mai világban a legtöbb embernek nincs elegendő pénzbeli háttere ahhoz, hogy egy élvezhető, szerencsén alapuló, könnyen kezelhető alkalmi játékkal játsszon, 
+anélkül hogy ki kellene mozdulnia az illető komfortzónájából, bár van egy csomó online felületen elérhető ”szerencsejáték”- okkal foglalkozó weboldal,
 ezeknek a hátránya:
 
 - Bonyolult regisztráció
@@ -45,11 +48,14 @@ ezeknek a hátránya:
 Ezért arra jutottunk, hogy egy ingyenes, könnyű regisztrációs , szerencsén alapuló alkalmi játékot létrehozzunk, amely felkelti az emberek érdeklődését.
 Mégis egy egyszerű alkalmi játék, amely ingyenes, élvezhető, kifinomult, "bugg" nélküli alkalmi játék megalkotására törekszünk.
 
+
 ## 6. Igényelt üzleti folyamatok modellje
 
 Ezt a programot azért hozzuk létre, hogy a (szerencsejátékot szerető) emberek a szabad időjükben tudjanak játszani költségvetés, és személyi adatok kiadása nélkül. 
 A projektünk egy adatbázissal lesz kapcsolatban, mely lokális módon lesz majd elérhető, egy adott hálózaton keresztül.
-A könnyű regisztrációs előnynek köszönhetően, percek alatt már a játék felületet tudjuk kezelni, a zsetonok száma mentésre kerül, ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot, ennek köszönhetően a felhasználók nagyobb kedvvel fogják alkalmazni a program adta lehetőségeket.
+A könnyű regisztrációs előnynek köszönhetően, percek alatt már a játék felületet tudjuk kezelni, a zsetonok száma mentésre kerül, 
+ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot, ennek köszönhetően a felhasználók nagyobb kedvvel fogják alkalmazni a program adta lehetőségeket.
+
 
 ## 7. Használati esetek
 
@@ -65,6 +71,7 @@ A Játékos az alábbi tevékenységeket végezheti:
 - Lehetősége van játék közben használni a súgót, mely megjeleníti melyik lap, mennyi pontot ér.
 - Két kártyás huszonegy (blackjack) esetén a feltett tét másfélszeresét (1,5x) nyeri a játékos.
 
+
 ## 8. Képernyőtervek
 
 Fontosabb képernyők:
@@ -75,7 +82,9 @@ Fontosabb képernyők:
 - játék
 ![](img/game.png)
 
+
 ## 9. Forgatókönyvek
+
 
 ### Játékmenet forgatókönyve
 Szereplők: Webalkalmazás
