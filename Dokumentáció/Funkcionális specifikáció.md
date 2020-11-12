@@ -33,10 +33,13 @@ SQL adatbázis, ahol elmentjük a regisztrált adatokat és a zsetonok számát.
 
 A mai világban a legtöbb embernek nincs elegendő pénzbeli háttere ahhoz, hogy egy élvezhető, szerencsén alapuló, könnyen kezelhető alkalmi játékkal játsszon, anélkül hogy ki kellene mozdulnia az illető komfortzónájából, bár van egy csomó online felületen elérhető ”szerencsejáték”- okkal foglalkozó weboldal,
 ezeknek a hátránya:
+
 - Bonyolult regisztráció
 - Személyazonosság kiadása
 - Bankkártya használata
-Ezért arra jutottunk, hogy egy ingyenes, könnyű regisztrációs , szerencsén alapuló alkalmi játékot létrehozzunk.
+
+Ezért arra jutottunk, hogy egy ingyenes, könnyű regisztrációs , szerencsén alapuló alkalmi játékot létrehozzunk, amely felkelti az emberek érdeklődését.
+Mégis egy egyszerű alkalmi játék, amely ingyenes, élvezhető, kifinomult, "bugg" nélküli alkalmi játék megalkotására törekszünk.
 
 ## 6. Igényelt üzleti folyamatok modellje
 
@@ -55,7 +58,7 @@ A Játékos az alábbi tevékenységeket végezheti:
 - Lehetősége van eldobni a kártyáit
 - A játékot bármely pillanatban abbahagyhatja az oldal bezárásával, ilyenkor automatikusan kilép a bejelentkezett fiókból, a bejelentkezetett fiók zsetonjainak száma mentődik.
 - Lehetősége van játék közben használni a súgót, mely megjeleníti melyik lap, mennyi pontot ér.
-- Két kártyás huszonegy (blackjack) esetén a feltett tét háromszorosát nyeri a játékos.
+- Két kártyás huszonegy (blackjack) esetén a feltett tét másfélszeresét (1,5x) nyeri a játékos.
 
 ## 8. Képernyőtervek
 
