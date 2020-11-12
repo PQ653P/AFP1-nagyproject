@@ -14,6 +14,7 @@ A játékot webes felületen fogjuk elkészíteni, regisztráció és belépés 
 A megrendelő egy szimpla kártyajátékot szeretne, amin egyszerűen és gyorsan tud a nemzetközi szabályok szerint játszani, így a blackjack-re jutott a választás.
 Az említett alkalmazást a megrendelő webes felületen szeretné használni, regisztrációval és belépést követően.
 Az ügyfél ragaszkodott egy egyszerű de mindent átfogó szabályzati oldalhoz, ahol aki nem ért a játékhoz, megtudja tanulni az alapokat.
+Az ügyfél ragaszkodott még ahhoz is, hogy az oldal szabványos legyen, és ez mellett még egy modern dizájnt és külsőt kapjon.
 Jelenleg a program létrehozásához, elkészítéséhez szükséges adatokat, tevékenységeket egyeztetjük.
 
 
