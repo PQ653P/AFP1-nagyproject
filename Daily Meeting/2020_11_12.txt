@@ -8,4 +8,4 @@ Pusztai Dominik Tamás:
 -dokumentáció (rendszertervek, követelmény specifikáció) tagolása
 
 Koplányi Balázs:
--menu.html szerkesztése
+-menu.html szerkesztése 
