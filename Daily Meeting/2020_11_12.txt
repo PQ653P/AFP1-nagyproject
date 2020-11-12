@@ -1,0 +1,8 @@
+2020.11.10.
+
+Pusztai Dominik Tamás:
+-rules.html létrehozása
+-game.html létrehozása
+-style.css létrehozása
+-dokumentáció (funkcionális specifikáció) bővítése
+-dokumentáció (rendszertervek, követelmény specifikáció) tagolása
