@@ -1,7 +1,8 @@
 ﻿# Követelmény specifikáció
 
 ## 1. Jelenlegi helyzet
-Mivel a csoport tagjai szeretik a kártyajátékokat (főleg a tétre menő, szerencsejátékokat) ezért úgy döntöttünk megalkotjuk a saját Blackjack játékunkat.
+Mivel a csoport tagjai szeretik a kártyajátékokat (főleg a tétre menő, szerencsejátékokat) 
+ezért úgy döntöttünk megalkotjuk a saját Blackjack játékunkat.
 A játékhoz regisztrálni kell, és ahhoz hogy játszunk be kell jelentkezni, hogy az aktuális állást el lehessen menteni.
 Sok helyen láttuk, hogy nem lehet normális tétet tenni, vagy nem is lehet tétet tenni egyáltalán. Ezért úgy gondoltuk,
 hogy megalkotjuk a saját játékunkat úgy ahogy mi szeretnénk, beleértve a játék technikáját és az egyenleg rendszert.
@@ -26,16 +27,19 @@ Pontozás is jelen lesz a weblapon, ennek hatására a játékosokat tudjuk buzd
 
 A mai világban a legtöbb embernek nincs elegendő pénzbeli háttere ahhoz, hogy egy élvezhető, szerencsén alapuló, könnyen kezelhető alkalmi játékkal játsszon, anélkül hogy ki kellene mozdulnia az illető komfortzónájából, bár van egy csomó online felületen elérhető ”szerencsejáték”- okkal foglalkozó weboldal,
 ezeknek a hátránya:
+
 - Bonyolult regisztráció
 - Személyazonosság kiadása
 - Bankkártya használata
 
-Ezért arra jutottunk, hogy egy ingyenes, könnyű regisztrációs , szerencsén alapuló alkalmi játékot létrehozzunk.
+Ezért arra jutottunk, hogy egy ingyenes, könnyű regisztrációs , szerencsén alapuló alkalmi játékot hozzunk létre.
 
 ## 4. Igényelt üzleti folyamatok modellje
 
-Ezt a programot azért hozzuk létre, hogy a (szerencsejátékot szerető) emberek a szabad időjükben tudjanak játszani költségvetés, és személyi adatok kiadása nélkül. A projektünk egy adatbázissal lesz kapcsolatban, mely lokális módon lesz majd elérhető, egy adott hálózaton keresztül.
-A könnyű regisztrációs előnynek köszönhetően, percek alatt már a játék felületet tudjuk kezelni, a zsetonok száma mentésre kerül, ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot, ennek köszönhetően a felhasználók nagyobb kedvvel fogják alkalmazni a program adta lehetőségeket.
+Ezt a programot azért hozzuk létre, hogy a (szerencsejátékot szerető) emberek a szabad időjükben tudjanak játszani költségvetés, és személyi adatok kiadása nélkül. 
+A projektünk egy adatbázissal lesz kapcsolatban, mely lokális módon lesz majd elérhető, egy adott hálózaton keresztül.
+A könnyű regisztrációs előnynek köszönhetően, percek alatt már a játék felületet tudjuk kezelni, a zsetonok száma mentésre kerül, 
+ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot, ennek köszönhetően a felhasználók nagyobb kedvvel fogják alkalmazni a program adta lehetőségeket.
 
 ## 5.Fogalomszótár
 
