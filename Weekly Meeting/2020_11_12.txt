@@ -2,4 +2,4 @@
 Átnéztük, hogy eddig mire jutottunk és megbeszéltük, hogy hogyan tovább.
 
 Lehóczky Csaba, Koplányi Balázs:
-Frontend, azon belül CSS, regisztráló, és beléptető felület átbeszélése.
+Frontend, azon belül CSS, regisztráló, és beléptető felület átbeszélése. 
