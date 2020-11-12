@@ -6,3 +6,6 @@ Pusztai Dominik Tamás:
 -style.css létrehozása
 -dokumentáció (funkcionális specifikáció) bővítése
 -dokumentáció (rendszertervek, követelmény specifikáció) tagolása
+
+Koplányi Balázs:
+-menu.html szerkesztése
