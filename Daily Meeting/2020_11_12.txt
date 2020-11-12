@@ -9,3 +9,8 @@ Pusztai Dominik Tamás:
 
 Koplányi Balázs:
 -menu.html szerkesztése 
+
+Lehóczky Csaba:
+-menu.html kiegészítése
+-Funkcionális specifikáció bővítése
+-Dokumentáció átnézése
