@@ -43,7 +43,8 @@ Mégis egy egyszerű alkalmi játék, amely ingyenes, élvezhető, kifinomult, "
 
 ## 6. Igényelt üzleti folyamatok modellje
 
-Ezt a programot azért hozzuk létre, hogy a (szerencsejátékot szerető) emberek a szabad időjükben tudjanak játszani költségvetés, és személyi adatok kiadása nélkül. A projektünk egy adatbázissal lesz kapcsolatban, mely lokális módon lesz majd elérhető, egy adott hálózaton keresztül.
+Ezt a programot azért hozzuk létre, hogy a (szerencsejátékot szerető) emberek a szabad időjükben tudjanak játszani költségvetés, és személyi adatok kiadása nélkül. 
+A projektünk egy adatbázissal lesz kapcsolatban, mely lokális módon lesz majd elérhető, egy adott hálózaton keresztül.
 A könnyű regisztrációs előnynek köszönhetően, percek alatt már a játék felületet tudjuk kezelni, a zsetonok száma mentésre kerül, ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot, ennek köszönhetően a felhasználók nagyobb kedvvel fogják alkalmazni a program adta lehetőségeket.
 
 ## 7. Használati esetek
