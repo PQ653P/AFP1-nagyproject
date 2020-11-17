@@ -26,3 +26,45 @@ body{
 	background-image: url('background.jpg');
 }
 
+
+.menubutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #DAA520;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.menubutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.menubutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -25px;
+  transition: 0.5s;
+}
+
+.menubutton:hover span {
+  padding-right: 30px;
+}
+
+.menubutton:hover span:after {
+  opacity: 2;
+  right: 0;
+}
+
+
