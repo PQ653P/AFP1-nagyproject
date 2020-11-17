@@ -8,6 +8,12 @@
 	overflow: auto;
 }
 
+.contributors{
+  font-family: Bookman Old Style;
+  font-size: 20px;
+  text-align: center;
+}
+
 h1{
   font-family: Bernard MT;
   font-size: 50px;
@@ -19,3 +25,4 @@ h1{
 body{
 	background-image: url('background.jpg');
 }
+
