@@ -68,4 +68,9 @@ body{
   right: 0;
 }
 
-
+.szoveg{
+	font-family: Cambria Math; 
+	color: white;
+	font-size: 18px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
