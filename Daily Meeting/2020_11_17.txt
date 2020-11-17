@@ -12,3 +12,5 @@ Pusztai Dominik Tamás:
 Koplányi Balázs:
 -menu.html-hez hozzárendeltem a style.css-t
 -menu.html szerkesztése
+-rules.html megírása
+-gombok szerkesztése
