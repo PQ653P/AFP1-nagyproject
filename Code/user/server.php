@@ -1,17 +1,17 @@
-<?php 
+<?php
 	session_start();
-	
+
 	$name = "";
 	$email    = "";
-	$errors = array(); 
+	$errors = array();
 	$_SESSION['success'] = "";
 
 	$db = mysqli_connect('localhost', 'root', '', 'afp_hnft_poker');
 
 
 	if (isset($_POST['reg_user'])) {
-		
-		$id = mysqli_real_escape_string($db, $_POST['id'])
+
+		$id = mysqli_real_escape_string($db, $_POST['id']);
 		$name = mysqli_real_escape_string($db, $_POST['name']);
 		$email = mysqli_real_escape_string($db, $_POST['email']);
 		$password = mysqli_real_escape_string($db, $_POST['password']);
@@ -28,7 +28,7 @@
 
 		if (count($errors) == 0) {
 			$password = md5($password);
-			$query = "INSERT INTO users (name, email, password) 
+			$query = "INSERT INTO users (name, email, password)
 					  VALUES('$name', '$email', '$password')";
 			mysqli_query($db, $query);
 
@@ -39,7 +39,7 @@
 
 	}
 
-		
+
 	if (isset($_POST['login_user'])) {
 		$username = mysqli_real_escape_string($db, $_POST['name']);
 		$password = mysqli_real_escape_string($db, $_POST['password']);
