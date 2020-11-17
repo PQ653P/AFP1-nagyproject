@@ -12,7 +12,6 @@
   font-family: Bookman Old Style;
   font-size: 20px;
   text-align: center;
-  text-decoration: underline;
 }
 
 h1{
@@ -75,5 +74,17 @@ body{
 	font-family: Cambria Math; 
 	color: white;
 	font-size: 18px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.keszitok{
+	text-decoration: underline;
+	font-weight: bold;  
+	color: blue;	
+	font-size: 25px;
+}
+
+p{
+	color: yellow;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
