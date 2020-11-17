@@ -8,3 +8,6 @@ Lehóczky Csaba:
 Pusztai Dominik Tamás:
 -style.css kiegészítése
 -gombok javítása, animálása
+
+Koplányi Balázs:
+-menu.html-hez hozzárendeltem a style.css-t
