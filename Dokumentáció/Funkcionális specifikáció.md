@@ -2,6 +2,7 @@
 
 ## 1. Bevezetés
 
+
 A csoport tagjai gyakran szoktat játszani a világhírű 'Huszonegy' nevezetű játékkal (angolul Blackjack),
 így úgy gondoltuk, hogy ez egy megfelelő ötlet lenne a projektnek.
 A játékhoz tartozni fog egy szabályrendszer ahonnan az is meg tudja tanulni a játék alapjait aki soha életében nem játszott huszoneggyet.
@@ -12,22 +13,28 @@ A játékot webes felületen fogjuk elkészíteni, regisztráció és belépés 
 
 ## 2. Jelenlegi helyzet
 
+
 A megrendelő egy szimpla kártyajátékot szeretne, amin egyszerűen és gyorsan tud a nemzetközi szabályok szerint játszani, így a blackjack-re jutott a választás.
 Az említett alkalmazást a megrendelő webes felületen szeretné használni, regisztrációval és belépést követően.
 Az ügyfél ragaszkodott egy egyszerű de mindent átfogó szabályzati oldalhoz, ahol aki nem ért a játékhoz, megtudja tanulni az alapokat.
 Az ügyfél ragaszkodott még ahhoz is, hogy az oldal szabványos legyen, és ez mellett még egy modern dizájnt és külsőt kapjon.
-Jelenleg a program létrehozásához, elkészítéséhez szükséges adatokat, tevékenységeket egyeztetjük.
+Jelenleg a program létrehozásához, elkészítéséhez szükséges adatokat, tevékenységeket discord segítségével, minden héten, hetente többször is egyeztetjük.
 
 
 ## 3. Vágyálom rendszer
 
+
 A csoport célja egy valósággal megegyező Blackjacket létrehozni , melynek alapszabálya ,
 hogy a játékmenet során a játékosnál lévő lapok összértéke több legyen az osztó lapjainak összértékénél, anélkül, hogy meghaladná a 21-et.
 Az "asztaloknál" egyértelműen látható, hogy mekkora a minimális és a maximális tét, mely a játékos által felrakható.
+A könnyű regisztráció után egy letisztult bejelentkező panel segítségével a felhasználó könnyű szerrel be tud jelentkezi a saját felhasználói fiókjába.
 A játék kezdetén a játékosok beteszik a tétjüket az úgynevezett fogadó zónájukba , és aki nyer , az nyeri az összes tétet.
+A játékosoknak lehetőségük van követni a zsetonjaik számának gyarapodását illetve annak elvesztését, 
+ezek mellet egy toplista is látható lesz ahol a játékosok versenyezni tudnak egymással.
 
 
 ## 4. Feltételek
+
 
 Az alkalmazásunk létrehozásának alapfeltétele, a JavaScript , vagy valamilyen más programozási nyelv.
 SQL adatbázis, ahol elmentjük a regisztrált adatokat és a zsetonok számát.
@@ -36,6 +43,7 @@ CSS-el adunk az oldalunknak külsőt, amivel igényesen és dizájnosan fog kin�
 
 
 ## 5. Jelenlegi üzleti folyamatok modellje
+
 
 A mai világban a legtöbb embernek nincs elegendő pénzbeli háttere ahhoz, hogy egy élvezhető, szerencsén alapuló, könnyen kezelhető alkalmi játékkal játsszon, 
 anélkül hogy ki kellene mozdulnia az illető komfortzónájából, bár van egy csomó online felületen elérhető ”szerencsejáték”- okkal foglalkozó weboldal,
@@ -51,13 +59,16 @@ Mégis egy egyszerű alkalmi játék, amely ingyenes, élvezhető, kifinomult, "
 
 ## 6. Igényelt üzleti folyamatok modellje
 
+
 Ezt a programot azért hozzuk létre, hogy a (szerencsejátékot szerető) emberek a szabad időjükben tudjanak játszani költségvetés, és személyi adatok kiadása nélkül. 
 A projektünk egy adatbázissal lesz kapcsolatban, mely lokális módon lesz majd elérhető, egy adott hálózaton keresztül.
 A könnyű regisztrációs előnynek köszönhetően, percek alatt már a játék felületet tudjuk kezelni, a zsetonok száma mentésre kerül, 
-ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot, ennek köszönhetően a felhasználók nagyobb kedvvel fogják alkalmazni a program adta lehetőségeket.
+ez által nem kell minden alkalommal újból és újból az elejétől kezdeni a játékot, 
+ennek köszönhetően a felhasználók nagyobb kedvvel fogják alkalmazni a program adta lehetőségeket.
 
 
 ## 7. Használati esetek
+
 
 A Játékos az alábbi tevékenységeket végezheti:
 - Regisztrálhat és törölhet fiókokat
@@ -67,12 +78,14 @@ A Játékos az alábbi tevékenységeket végezheti:
 - Abbahagyhatja a lapkérést
 - Megtekintheti az aktuális játék eredményét a képernyőn megjelenő "Nyertél xy zsetont!", "Vesztettél xy zsetont!"
 - Lehetősége van eldobni a kártyáit
-- A játékot bármely pillanatban abbahagyhatja az oldal bezárásával, ilyenkor automatikusan kilép a bejelentkezett fiókból, a bejelentkezetett fiók zsetonjainak száma mentődik.
+- A játékot bármely pillanatban abbahagyhatja az oldal bezárásával, ilyenkor automatikusan kilép a bejelentkezett fiókból, 
+  a bejelentkezetett fiók zsetonjainak száma mentődik.
 - Lehetősége van játék közben használni a súgót, mely megjeleníti melyik lap, mennyi pontot ér.
 - Két kártyás huszonegy (blackjack) esetén a feltett tét másfélszeresét (1,5x) nyeri a játékos.
 
 
 ## 8. Képernyőtervek
+
 
 Fontosabb képernyők:
 - regisztráció / bejelentkezés
@@ -99,3 +112,4 @@ A játékos 3 lépés közül választhat:
 Ha a játékos végzett, az osztó lapjait felfedve meghatározzuk a kör nyertesét.
 Ha a játékos nyert, a tét értéke hozzáadódik zsetonjai számához, ellenkező esetben levonódik belőle.
 Ha elfogytak a zsetonjai, a játék véget ér.
+A játékot az admin tudja újraandítani minden játékosnak.
