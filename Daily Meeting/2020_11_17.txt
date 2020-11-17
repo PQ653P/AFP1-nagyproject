@@ -4,3 +4,7 @@ Lehóczky Csaba:
 -menu.html kiegészítése és javítása
 -rules.html-hez hozzárendeltem a style.css-t
 -style.css kiegészítése
+
+Pusztai Dominik Tamás:
+-style.css kiegészítése
+-gombok javítása, animálása
