@@ -9,9 +9,8 @@
 	$db = mysqli_connect('localhost', 'root', '', 'afp_hnft_poker');
 
 
-	if (isset($_POST['reg_user'])) {
+	if (isset($_POST['register'])) {
 
-		$id = mysqli_real_escape_string($db, $_POST['id']);
 		$name = mysqli_real_escape_string($db, $_POST['name']);
 		$email = mysqli_real_escape_string($db, $_POST['email']);
 		$password = mysqli_real_escape_string($db, $_POST['password']);
