@@ -5,3 +5,7 @@ Pusztai Dominik Tamás:
 -login.php javítása.
 -a menü 2 gombjának url megváltoztatása, fölösleges php fájl törlése.
 
+Koplányi Balázs:
+-game.html-ben a táblázat letrehozása
+-táblázat szerkesztése
+-kártyapakli feltöltése a táblázatba
