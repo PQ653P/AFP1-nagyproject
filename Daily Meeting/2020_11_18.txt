@@ -10,3 +10,6 @@ Koplányi Balázs:
 -táblázat szerkesztése
 -kártyapakli feltöltése a táblázatba
 
+Lehóczky Csaba:
+-game.html html rész létrehozása és css hozzáadása
+-DEMO.pptx létrehozása és elkészítése
