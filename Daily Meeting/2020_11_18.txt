@@ -1,0 +1,7 @@
+2020.11.18
+
+Pusztai Dominik Tamás:
+-register.php javítása.
+-login.php javítása.
+-a menü 2 gombjának url megváltoztatása, fölösleges php fájl törlése.
+
