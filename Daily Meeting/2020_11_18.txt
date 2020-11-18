@@ -9,3 +9,4 @@ Koplányi Balázs:
 -game.html-ben a táblázat letrehozása
 -táblázat szerkesztése
 -kártyapakli feltöltése a táblázatba
+
