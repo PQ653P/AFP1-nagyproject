@@ -7,14 +7,14 @@
 </head>
 <body>
 		<h2>Bejelentkezés</h2>
-	
+
 	<form method="post" action="login.php">
 
 		<?php include('errors.php'); ?>
 
 		<div class="input-group">
 			<label>Felhasználónév</label>
-			<input type="text" name="name" >
+			<input type="text" name="username" >
 		</div>
 		<div class="input-group">
 			<label>Jelszó</label>
