@@ -1,0 +1,6 @@
+2020.11.26
+
+Lehóczky Csaba, Pusztai Dominik, Árvai Dániel, Koplányi Balázs:
+A projekt megvalósításához szükséges fájlok, programok megszerzése.
+Backend fejlesztés további megbeszélése. A feladatok személyekre
+kiszabása.
