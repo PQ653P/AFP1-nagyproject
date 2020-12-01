@@ -27,7 +27,7 @@
 			<input type="password" name="password">
 		</div>
 		<div class="input-group">
-			<button type="submit" class="btn" name="register">Regisztráció</button>
+			<button type="submit" class="menubutton" name="register">Regisztráció</button>
 		</div>
 		<p>
 			Már van fiókja? <a href="login.php">Bejelentkezés</a>
