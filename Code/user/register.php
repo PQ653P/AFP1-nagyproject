@@ -33,9 +33,8 @@
 			Már van fiókja? <a href="login.php">Bejelentkezés</a>
 		</p>
 	</form>
-	<form>
 		<a href="../menu.html"><button class="menubutton" type="submit"><span>MENÜ</span></button></a><br>
-	</form>
+	
 </body>
 
 </html>
