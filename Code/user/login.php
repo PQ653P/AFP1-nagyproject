@@ -1,12 +1,14 @@
 <?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Bejelentkezés</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-		<h2>Bejelentkezés</h2>
+	<h2>Bejelentkezés</h2>
 
 	<form method="post" action="login.php">
 
@@ -14,7 +16,7 @@
 
 		<div class="input-group">
 			<label>Felhasználónév</label>
-			<input type="text" name="username" >
+			<input type="text" name="username">
 		</div>
 		<div class="input-group">
 			<label>Jelszó</label>
@@ -27,7 +29,8 @@
 			Nincs még fiókja? <a href="register.php">Regisztráció</a>
 		</p>
 	</form>
-<button class="menubutton" type="submit" formaction="file:///C:/xampp/htdocs/BLACKJACK/Code/menu.html"><span>MENÜ</span></button><br>
+	<a href="../menu.html"><button class="menubutton" type="submit"><span>MENÜ</span></button></a><br>
 
 </body>
+
 </html>
