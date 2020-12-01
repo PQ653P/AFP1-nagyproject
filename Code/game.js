@@ -47,10 +47,15 @@ class Deck {
 class BlackJackPlayer {
     constructor() {
         this.cards = [];
+        this.money = 100;
     }
 
     addCard(card) {
         this.cards.push(card);
+    }
+
+    discard() {
+        this.cards = [];
     }
 
     get handValue() {
@@ -75,6 +80,11 @@ class Game {
         this.dealer = new BlackJackPlayer();
         this.deck.shuffle();
         this.isRunning = true;
+    }
+
+    newGame() {
+        this.player.discard();
+        this.dealer.discard();
     }
 
     endGame(win, message) {
@@ -116,6 +126,22 @@ class Game {
 }
 
 window.onload = function () {
-    game = new Game();
+    var game = new Game();
+    var hitButton =     document.getElementById('hit');
+    var standButton =   document.getElementById('stand');
+    var newGameButton = document.getElementById('newGame');
+
+    hitButton.onclick = function() {
+        alert('hello world');
+        game.hit();
+    }
+
+    standButton.onclick = function() {
+        game.stand();
+    }
+
+    newGameButton.onclick = function() {
+        game.newGame();
+    }
 
 }
