@@ -3,11 +3,11 @@
 <html>
 <head>
 	<title>Regisztráció</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<link href="phpstyle.css" rel="stylesheet">
 <body>
 	<div class="header">
-		<h2>Regisztráció</h2>
+		<h1>Regisztráció</h1>
 	</div>
 	
 	<form method="post" action="register.php">

@@ -3,10 +3,10 @@
 <html>
 <head>
 	<title>Bejelentkezés</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<link href="phpstyle.css" rel="stylesheet">
 <body>
-		<h2>Bejelentkezés</h2>
+		<h1>Bejelentkezés</h1>
 
 	<form method="post" action="login.php">
 
