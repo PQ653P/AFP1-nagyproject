@@ -199,7 +199,7 @@ class Game {
         this.player.cards.push(this.deck.drawOne());
         this.dealer.cards.push(this.deck.drawOne());
 
-        if (this.player.handValue == 21) {
+        if (this.player.handValue() == 21) {
             this.endGame(true, 'BLACKJACK!');
         }
 
