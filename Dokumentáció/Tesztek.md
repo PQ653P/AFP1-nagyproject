@@ -38,6 +38,14 @@
 | 4. | **Login teszt**| A bejelentkezés nem működött, hibás PHP kód miatt. A hiba ki lett javítva. |
 | 5. | **Regisztráció teszt** | A regisztráció nem működött, hibás adatbázis konfiguráció miatt. A hiba ki lett javítva. |
 
+## 3.3 Koplányi Balázs - PMWV8O
+
+### Sikeres tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Betűszín teszt** | CSS segítségével, a betűk sikeres átszínezése. |
+
 
 ## 3.4 Pusztai Dominik Tamás - PQ653P
 ### Sikeres tesztek
