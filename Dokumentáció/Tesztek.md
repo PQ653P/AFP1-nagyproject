@@ -54,6 +54,7 @@
 | Sorszám | Teszt neve | Leírása |
 |---|---|---|
 | 1. | **Menü teszt** | A menü hibás linkeket tartalmazott a játék oldalára. A hiba ki lett javítva. |
+| 2. | **Bejelentkező felület teszt** | A jelszó nem tárolódott el a PHPMyAdmin-ban. A hiba ki lett javítva.  |
 
 ## 3.4 Pusztai Dominik Tamás - PQ653P
 ### Sikeres tesztek
