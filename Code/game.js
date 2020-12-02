@@ -80,7 +80,7 @@ class BlackJackPlayer {
 }
 
 class Game {
-    constructor(displayElement, hitButton, standButton, newGameButton) {
+    constructor(deckDisplay, hitButton, standButton, newGameButton) {
         // adattagok
         this.deck   = new Deck();
         this.player = new BlackJackPlayer();
@@ -89,7 +89,7 @@ class Game {
         this.isRunning = true;
 
         // HTML tagek
-        this.displayElement = displayElement;
+        this.displayElement = deckDisplay;
         this.hitButton      = hitButton;
         this.standButton    = standButton;
         this.newGameButton  = newGameButton;
