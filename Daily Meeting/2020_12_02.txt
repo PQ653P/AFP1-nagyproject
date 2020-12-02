@@ -6,4 +6,5 @@ Lehóczky Csaba:
 
 Árvai Dániel, Pusztai Dominik:
 - A játék JavaScript kódjának befejezése
+- javascript/php tesztelése
 .
