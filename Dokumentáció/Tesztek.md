@@ -45,6 +45,7 @@
 | Sorszám | Teszt neve | Leírása |
 |---|---|---|
 | 1. | **Betűszín teszt** | CSS segítségével, a betűk sikeres átszínezése. |
+| 2. | **Betűstílus teszt** | CSS segítségével, a betűk stílusának sikeres megváltoztatása. |
 
 
 ## 3.4 Pusztai Dominik Tamás - PQ653P
