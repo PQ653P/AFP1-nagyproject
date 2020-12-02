@@ -56,6 +56,7 @@
 |---|---|---|
 | 1. | **Menü teszt** | A menü hibás linkeket tartalmazott a játék oldalára. A hiba ki lett javítva. |
 | 2. | **Bejelentkező felület teszt** | A jelszó nem tárolódott el a PHPMyAdmin-ban. A hiba ki lett javítva.  |
+| 3. | **Pakli tesztje** | A játék alatt rossz minőségben jelentek meg a lapok. A hiba ki lett javítva.  |
 
 ## 3.4 Pusztai Dominik Tamás - PQ653P
 ### Sikeres tesztek
