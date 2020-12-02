@@ -1,5 +1,8 @@
 # Tesztjegyzőkönyv
 
+## 1. Tesztek
+
+## 2. Tesztelési terv hatóköre, célja:
 
 ## Teszt 1
 
