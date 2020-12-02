@@ -22,6 +22,7 @@
 | Sorszám | Teszt neve | Leírása |
 |---|---|---|
 | 1. | **Újrakeverés teszt** | Ha a játékos elég kört játszik, hogy a pakli elfogyjon, vagy majdnem elfogyjon, a következő játék kezdetekor a lapokat a program visszakeveri a pakliba. |
+| 2. | **Zseton teszt** | A játékban minden kör végén a játékos 10 zsetont kap, ha megnyeri, 10 zsetont veszít, ha elveszíti a játékot. |
 
 
 ### Hibás tesztek
