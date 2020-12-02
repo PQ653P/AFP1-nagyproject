@@ -6,6 +6,8 @@
 
 ## 3. Tesztek
 
+Mind a 4 fejlesztőre ki lett osztva a saját részének tesztelése, esetleges hibáinak javítása.
+
 ## 3.1 Lehóczky Csaba - YP5NM7
 
 ### Sikeres tesztek
