@@ -218,6 +218,10 @@ class Game {
         else {
             this.player.money -= 10;
         }
+        if (this.deck.length < 10) {
+            this.showMessage('Keverés...');
+            this.deck.fillDeck();
+        }
         this.display();
     }
 
@@ -289,5 +293,4 @@ window.onload = function () {
     );
     game.showMessage('Új játék indításához kattints az "Új kör" gombra.');
     game.display();
-    //game.newGame();
 }
