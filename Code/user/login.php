@@ -5,10 +5,9 @@
 <head>
 	<title>Bejelentkezés</title>
 </head>
-
 <link href="phpstyle.css" rel="stylesheet">
+<body>
 	<h1>Bejelentkezés</h1>
-
 
 	<form method="post" action="login.php">
 
