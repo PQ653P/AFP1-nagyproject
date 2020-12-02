@@ -1,5 +1,9 @@
-2020.11.17.
+2020.12.02.
 
 Lehóczky Csaba:
 -html/css tesztelése
 -dokumentáció rendszerezése
+
+Árvai Dániel, Pusztai Dominik:
+- A játék JavaScript kódjának befejezése
+.
