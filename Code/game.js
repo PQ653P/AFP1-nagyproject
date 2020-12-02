@@ -202,6 +202,9 @@ class Game {
         if (this.player.handValue() == 21) {
             this.endGame(true, 'BLACKJACK!');
         }
+        else if (this.dealer.handValue() == 21) {
+            this.endGame(false, 'Vesztettél! Az osztónak blackjackje van!');
+        }
 
         this.display();
     }
@@ -235,7 +238,7 @@ class Game {
 
         let value = this.player.handValue();
         if (value > 21) {
-            this.endGame(false, 'Túllépted a 21-et! Vesztettél!');
+            this.endGame(false, `Túllépted a 21-et! Vesztettél!<br/> Lapjaid értéke: ${value}`);
         }
 
         this.display();
