@@ -15,6 +15,8 @@
 | **Árnyékolás teszt** | CSS segítségével, a szövegek árnyékolásának szerkesztése. |
 | **Gomb teszt** | CSS fájlban, a gombnak sikeres méret növelése. |
 
+
+
 ## 3.2 Árvai Dániel - IXWYOW
 
 ### Sikeres tesztek
@@ -38,17 +40,20 @@
 | 4. | **Login teszt**| A bejelentkezés nem működött, hibás PHP kód miatt. A hiba ki lett javítva. |
 | 5. | **Regisztráció teszt** | A regisztráció nem működött, hibás adatbázis konfiguráció miatt. A hiba ki lett javítva. |
 
+
+
 ## 3.3 Koplányi Balázs - PMWV8O
 
 ### Sikeres tesztek
 
 | Sorszám | Teszt neve | Leírása |
 |---|---|---|
-| 4. | **Gomb animáció teszt** | CSS segítségével, a animáció rendelése a gombokhoz. |
-| 2. | **Betűstílus teszt** | CSS segítségével, a betűk stílusának sikeres megváltoztatása. |
+| 1. | **Gomb animáció teszt** | CSS segítségével, a animáció rendelése a gombokhoz. |
+| 2. | **Betűszín teszt** | CSS segítségével, a betűk sikeres átszínezése. |
 | 3. | **Pontszám teszt** | Korábbi hiba kijavítása után, a játékos lapjainak összértékét a program immár helyesen számolja ki. |
-| 4. | **Betűszín teszt** | CSS segítségével, a betűk sikeres átszínezése. |
+| 4. | **Betűstílus teszt** | CSS segítségével, a betűk stílusának sikeres megváltoztatása. |
 | 5. | **Gomb átszínezés teszt** | CSS segítségével, a gombok sikeres átszínezése. |
+
 
 ### Hibás tesztek
 
