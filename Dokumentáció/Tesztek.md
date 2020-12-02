@@ -1,10 +1,14 @@
 # Tesztjegyzőkönyv
 
-## 1. Tesztek
+## 1. Bevezetés
 
 ## 2. Tesztelési terv hatóköre, célja:
 
-## Teszt 1
+## 3. Tesztek
+
+## 3.1 Lehóczky Csaba - YP5NM7
+
+### Hibás tesztek
 
 |   |   |
 |---|---|
