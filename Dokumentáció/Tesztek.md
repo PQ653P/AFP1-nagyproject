@@ -58,6 +58,7 @@
 | 2. | **Bejelentkező felület teszt** | A jelszó nem tárolódott el a PHPMyAdmin-ban. A hiba ki lett javítva.  |
 | 3. | **Pakli tesztje** | A játék alatt rossz minőségben jelentek meg a lapok. A hiba ki lett javítva.  |
 | 4. | **Kártyák tesztje** | Az oldal méretének változtatásakor torzultak a lapok. A hiba ki lett javítva.  |
+| 5. | **Pénz teszt** | Ha a játékos elvesztette minden pénzét, minuszba tudott menni az egyenlege. A hiba ki lett javítva.  |
 
 ## 3.4 Pusztai Dominik Tamás - PQ653P
 ### Sikeres tesztek
