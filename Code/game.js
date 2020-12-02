@@ -89,7 +89,7 @@ class Game {
         this.isRunning = true;
 
         // HTML tagek
-        this.displayElement = deckDisplay;
+        this.deckDisplay    = deckDisplay;
         this.hitButton      = hitButton;
         this.standButton    = standButton;
         this.newGameButton  = newGameButton;
@@ -100,7 +100,7 @@ class Game {
         this.newGameButton.onclick = (() => this.newGame());
 
         // display
-        this.displayElement.style.position = 'relative';
+        this.deckDisplay.style.position = 'relative';
     }
 
     display() {
@@ -112,7 +112,7 @@ class Game {
             this.hitButton.disabled   = false;
             this.standButton.disabled = false;
 
-            this.displayElement.innerHTML = '';
+            this.deckDisplay.innerHTML = '';
 
             for (let i = 0; i < this.deck.cards.length; ++i) {
                 let el = document.createElement('img');
@@ -126,7 +126,7 @@ class Game {
                 }
                 el.style.top  = -i / 3 ;
                 el.style.left = -i / 3;
-                this.displayElement.appendChild(el);
+                this.deckDisplay.appendChild(el);
             }
         }
     }
