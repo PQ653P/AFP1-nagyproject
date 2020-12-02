@@ -1,7 +1,7 @@
 class Card {
-    constructor(suits, value) {
-        this.suits = suits;
-        this.value = value;
+    constructor(suit, value) {
+        this.suit     = suit;
+        this.value    = value;
         this.revealed = false;
     }
 }
@@ -80,7 +80,7 @@ class BlackJackPlayer {
 }
 
 class Game {
-    constructor(deckDisplay, hitButton, standButton, newGameButton) {
+    constructor(deckDisplay, playerHandDisplay, hitButton, standButton, newGameButton) {
         // adattagok
         this.deck   = new Deck();
         this.player = new BlackJackPlayer();
@@ -89,10 +89,11 @@ class Game {
         this.isRunning = true;
 
         // HTML tagek
-        this.deckDisplay    = deckDisplay;
-        this.hitButton      = hitButton;
-        this.standButton    = standButton;
-        this.newGameButton  = newGameButton;
+        this.deckDisplay       = deckDisplay;
+        this.playerHandDisplay = playerHandDisplay;
+        this.hitButton         = hitButton;
+        this.standButton       = standButton;
+        this.newGameButton     = newGameButton;
 
         // eventek
         this.hitButton.onclick     = (() => this.hit());
@@ -128,6 +129,19 @@ class Game {
                 el.style.left = -i / 3;
                 this.deckDisplay.appendChild(el);
             }
+
+            this.playerHandDisplay.innerHTML = '';
+            for (let i = 0; i < this.player.cards.length; ++i) {
+                let el = document.createElement('img');
+                let card = this.player.cards[i];
+                let fileName = `cards/${card.value}${card.suit[0]}.jpg`;
+
+                el.setAttribute('src', fileName);
+                el.setAttribute('width', '100px');
+
+                this.playerHandDisplay.appendChild(el);
+
+            }
         }
     }
 
@@ -153,7 +167,9 @@ class Game {
         if (!this.isRunning) {
             return;
         }
-
+        if (this.dealer.handValue() < 17) {
+            this.dealer.cards.push(this.deck.drawOne());
+        }
     }
 
     hit() {
@@ -162,10 +178,10 @@ class Game {
         }
 
         this.player.addCard(this.deck.drawOne());
+        this.display();
         if (this.player.handValue() > 21) {
             this.endGame(false, 'Túllépted a 21-et! Vesztettél!');
         }
-        this.display();
     }
 
     stand() {
@@ -191,13 +207,14 @@ class Game {
 }
 
 window.onload = function () {
-    let deckDisplay   = document.getElementById('deck');
+    let deckDisplay       = document.getElementById('deck');
+    let playerHandDisplay = document.getElementById('playerHand');
 
     // gombok
     let hitButton     = document.getElementById('hit');
     let standButton   = document.getElementById('stand');
     let newGameButton = document.getElementById('newGame');
 
-    let game = new Game(deckDisplay, hitButton, standButton, newGameButton);
+    let game = new Game(deckDisplay, playerHandDisplay, hitButton, standButton, newGameButton);
     game.newGame();
 }
