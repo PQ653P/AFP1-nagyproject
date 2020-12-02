@@ -25,6 +25,7 @@
 |---|---|---|
 | 1. | **Háttér teszt** | Az oldal egyes részein nem megfelelően jelent meg a háttér. A hiba ki lett javítva. |
 | 2. | **Címsor teszt** | Az alkalmazás egyes címsorai nem megfelelően jelentek meg. A hiba ki lett javítva. |
+| 3. | **Adatbázis teszt** | Az adatbázis hiányosan tárolt adatokat. A hiba ki lett javítva. |
 
 
 
