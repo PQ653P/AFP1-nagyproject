@@ -11,5 +11,6 @@
 ### Sikeres tesztek
 
 |   |   |
+|---|---|
 | **Árnyékolás teszt** | CSS segítségével, a szövegek árnyékolásának szerkesztése. |
 | **Gomb teszt** | CSS fájlban, a gombnak sikeres méret növelése. |
