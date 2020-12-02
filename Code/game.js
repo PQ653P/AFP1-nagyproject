@@ -1,3 +1,5 @@
+const CARD_WIDTH = 150;
+
 class Card {
     constructor(suit, value) {
         this.suit     = suit;
@@ -48,6 +50,24 @@ class Deck {
         }
         return this.cards.pop();
     }
+
+    display(displayTag) {
+        displayTag.innerHTML = '';
+        for (let i = 0; i < this.cards.length; ++i) {
+            let el = document.createElement('img');
+            el.setAttribute('src', 'hátlap.png');
+            el.setAttribute('width', `${CARD_WIDTH}px`);
+            if (i == 0) {
+                el.style.position = 'relative';
+            }
+            else {
+                el.style.position = 'absolute';
+            }
+            el.style.top =  -i / 3;
+            el.style.left = -i / 3;
+            displayTag.appendChild(el);
+        }
+    }
 }
 
 class BlackJackPlayer {
@@ -69,7 +89,7 @@ class BlackJackPlayer {
         for (let i = 0; i < this.cards.length; ++i) {
             let value = this.cards[i].value;
             if (value != 'A') {
-                total += isNaN(value) ? 10 : value;
+                total += isNaN(value) ? 10 : parseInt(value);
             }
             else {
                 total += (total + 11 <= 21) ? 11 : 1;
@@ -77,20 +97,61 @@ class BlackJackPlayer {
         }
         return total;
     }
+
+    displayHand(displayTag) {
+        displayTag.innerHTML = '';
+        for (let i = 0; i < this.cards.length; ++i) {
+            let el = document.createElement('img');
+            let card = this.cards[i];
+            let fileName = `cards/${card.value}${card.suit[0]}.jpg`;
+
+            el.setAttribute('src', fileName);
+            el.setAttribute('width', `${CARD_WIDTH}px`);
+
+            displayTag.appendChild(el);
+        }
+    }
+
+    displayFirst(displayTag) {
+        displayTag.innerHTML = '';
+        if (this.cards.length > 0) {
+            let el = document.createElement('img');
+            let card = this.cards[0];
+            let fileName = `cards/${card.value}${card.suit[0]}.jpg`;
+            el.setAttribute('src', fileName);
+            el.setAttribute('width', `${CARD_WIDTH}px`);
+
+            displayTag.appendChild(el);
+
+            for (let i = 1; i < this.cards.length; ++i) {
+                let el = document.createElement('img');
+
+                el.setAttribute('src', 'hátlap.png');
+                el.setAttribute('width', `${CARD_WIDTH}px`);
+
+                displayTag.appendChild(el);
+            }
+        }
+    }
 }
 
 class Game {
-    constructor(deckDisplay, playerHandDisplay, hitButton, standButton, newGameButton) {
+    constructor(
+        msgDisplay,
+        deckDisplay, playerHandDisplay, dealerHandDisplay,
+        hitButton, standButton, newGameButton) {
         // adattagok
         this.deck   = new Deck();
         this.player = new BlackJackPlayer();
         this.dealer = new BlackJackPlayer();
         this.deck.shuffle();
-        this.isRunning = true;
+        this.isRunning = false;
 
         // HTML tagek
+        this.msgDisplay        = msgDisplay;
         this.deckDisplay       = deckDisplay;
         this.playerHandDisplay = playerHandDisplay;
+        this.dealerHandDisplay = dealerHandDisplay;
         this.hitButton         = hitButton;
         this.standButton       = standButton;
         this.newGameButton     = newGameButton;
@@ -102,57 +163,51 @@ class Game {
 
         // display
         this.deckDisplay.style.position = 'relative';
+
+        this.showMessage('Új játék indításához kattints az "Új kör" gombra.');
+    }
+
+    showMessage(message) {
+        this.msgDisplay.innerHTML = message;
     }
 
     display() {
         if (!this.isRunning) {
             this.hitButton.disabled   = true;
             this.standButton.disabled = true;
+
+            this.dealer.displayHand(this.dealerHandDisplay);
         }
         else {
+            this.showMessage(`Lapjaid értéke: ${this.player.handValue()}`);
             this.hitButton.disabled   = false;
             this.standButton.disabled = false;
 
-            this.deckDisplay.innerHTML = '';
-
-            for (let i = 0; i < this.deck.cards.length; ++i) {
-                let el = document.createElement('img');
-
-                el.setAttribute('src', 'hátlap.png');
-                if (i == 0) {
-                    el.style.position = 'relative';
-                }
-                else {
-                    el.style.position = 'absolute';
-                }
-                el.style.top  = -i / 3 ;
-                el.style.left = -i / 3;
-                this.deckDisplay.appendChild(el);
-            }
-
-            this.playerHandDisplay.innerHTML = '';
-            for (let i = 0; i < this.player.cards.length; ++i) {
-                let el = document.createElement('img');
-                let card = this.player.cards[i];
-                let fileName = `cards/${card.value}${card.suit[0]}.jpg`;
-
-                el.setAttribute('src', fileName);
-                el.setAttribute('width', '100px');
-
-                this.playerHandDisplay.appendChild(el);
-
-            }
+            this.dealer.displayFirst(this.dealerHandDisplay);
         }
+        this.deck.display(this.deckDisplay);
+        this.player.displayHand(this.playerHandDisplay);
     }
 
     newGame() {
         this.isRunning = true;
         this.player.discard();
         this.dealer.discard();
+
+        this.player.cards.push(this.deck.drawOne());
+        this.dealer.cards.push(this.deck.drawOne());
+        this.player.cards.push(this.deck.drawOne());
+        this.dealer.cards.push(this.deck.drawOne());
+
+        if (this.player.handValue == 21) {
+            this.endGame(true, 'BLACKJACK!');
+        }
+
         this.display();
     }
 
     endGame(win, message) {
+        this.showMessage(message);
         this.isRunning = false;
         if (win) {
             this.player.money += 10;
@@ -176,12 +231,14 @@ class Game {
         if (!this.isRunning) {
             return;
         }
-
         this.player.addCard(this.deck.drawOne());
-        this.display();
-        if (this.player.handValue() > 21) {
+
+        let value = this.player.handValue();
+        if (value > 21) {
             this.endGame(false, 'Túllépted a 21-et! Vesztettél!');
         }
+
+        this.display();
     }
 
     stand() {
@@ -193,28 +250,41 @@ class Game {
 
         let pValue = this.player.handValue();
         let dValue = this.dealer.handValue();
-        if (pValue == 21 && this.player.cards.length == 2) {
-            this.endGame(true, 'BLACKJACK!');
+        if (dValue > 21) {
+            this.endGame(true, `Nyertél! Az osztó túllépte a 21-et!`);
         }
         else if (pValue > dValue) {
-            this.endGame(true, `Nyertél! Lapjaid értéke: ${pValue}.`);
+            this.endGame(true, `Nyertél! Lapjaid értéke: ${pValue}.<br/>Az osztóé: ${dValue}`);
         }
         else {
-            this.endGame(false, `Vesztettél! Lapjaid értéke: ${pValue}.`);
+            this.endGame(false, `Vesztettél! Lapjaid értéke: ${pValue}. Az osztóé: ${dValue}`);
         }
         this.display();
     }
 }
 
 window.onload = function () {
+    // display
     let deckDisplay       = document.getElementById('deck');
     let playerHandDisplay = document.getElementById('playerHand');
+    let dealerHandDisplay = document.getElementById('dealerHand');
+    let msgDisplay        = document.getElementById('message')
 
     // gombok
     let hitButton     = document.getElementById('hit');
     let standButton   = document.getElementById('stand');
     let newGameButton = document.getElementById('newGame');
 
-    let game = new Game(deckDisplay, playerHandDisplay, hitButton, standButton, newGameButton);
-    game.newGame();
+    let game = new Game(
+        msgDisplay,
+        deckDisplay,
+        playerHandDisplay,
+        dealerHandDisplay,
+        hitButton,
+        standButton,
+        newGameButton
+    );
+    game.showMessage('Új játék indításához kattints az "Új kör" gombra.');
+    game.display();
+    //game.newGame();
 }
