@@ -19,6 +19,13 @@
 | 5. | **Szabályok teszt** | Az oldal szabályainak a tesztelése, megfelelőek. |
 
 
+### Hibás tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Háttér teszt** | Az oldal egyes részein nem megfelelően jelent meg a háttér. A hiba ki lett javítva. |
+
+
 
 ## 3.2 Árvai Dániel - IXWYOW
 
