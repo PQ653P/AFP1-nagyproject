@@ -24,6 +24,7 @@
 | 1. | **Újrakeverés teszt** | Ha a játékos elég kört játszik, hogy a pakli elfogyjon, vagy majdnem elfogyjon, a következő játék kezdetekor a lapokat a program visszakeveri a pakliba. |
 | 2. | **Zseton teszt** | A játékban minden kör végén a játékos 10 zsetont kap, ha megnyeri, 10 zsetont veszít, ha elveszíti a játékot. |
 | 3. | **Osztás teszt** | A játék elején az osztó a játékosnak és önmagának is 2 lapot oszt ki. A játékos lapjait felfedve, a sajátjai közül az elsőt felfordítva, a másodikat arrcal lefelé. |
+| 4. | **Új játék teszt** | Új kör indításakor a játék (a zsetonokat és a pakli már kihúzott lapjait leszámítva) alaphelyzetbe áll.|
 
 
 ### Hibás tesztek
