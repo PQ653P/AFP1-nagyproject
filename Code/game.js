@@ -124,8 +124,8 @@ class Game {
                 else {
                     el.style.position = 'absolute';
                 }
-                el.style.top  = -i / 4 ;
-                el.style.left = -i / 4;
+                el.style.top  = -i / 3 ;
+                el.style.left = -i / 3;
                 this.displayElement.appendChild(el);
             }
         }
