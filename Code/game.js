@@ -12,6 +12,11 @@ Card.VALUES = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
 class Deck {
     constructor() {
         this.cards = [];
+        this.fillDeck();
+    }
+
+    fillDeck() {
+        this.cards = [];
         for (var i = 0; i < Card.SUITS.length; i++) {
             for (var j = 0; j < Card.VALUES.length; j++) {
                 var card = new Card(Card.SUITS[i], Card.VALUES[j]);
@@ -38,7 +43,8 @@ class Deck {
 
     drawOne() {
         if (this.cards.length == 0) {
-            throw 'Nincs több lap! :(';
+            this.fillDeck();
+            this.shuffle();
         }
         return this.cards.pop();
     }
@@ -58,7 +64,7 @@ class BlackJackPlayer {
         this.cards = [];
     }
 
-    get handValue() {
+    handValue() {
         var total = 0;
         for (var i = 0; i < this.cards.length; ++i) {
             var value = this.cards[i].value;
@@ -74,36 +80,80 @@ class BlackJackPlayer {
 }
 
 class Game {
-    constructor() {
+    constructor(displayElement, hitButton, standButton, newGameButton) {
+        // adattagok
         this.deck   = new Deck();
         this.player = new BlackJackPlayer();
         this.dealer = new BlackJackPlayer();
         this.deck.shuffle();
         this.isRunning = true;
+
+        // HTML tagek
+        this.displayElement = displayElement;
+        this.hitButton      = hitButton;
+        this.standButton    = standButton;
+        this.newGameButton  = newGameButton;
+
+        // eventek
+        this.hitButton.onclick     = (() => this.hit());
+        this.standButton.onclick   = (() => this.stand());
+        this.newGameButton.onclick = (() => this.newGame());
+
+        // display
+        this.displayElement.style.position = 'relative';
+    }
+
+    display() {
+        if (!this.isRunning) {
+            this.hitButton.disabled   = true;
+            this.standButton.disabled = true;
+        }
+        else {
+            this.hitButton.disabled   = false;
+            this.standButton.disabled = false;
+
+            this.displayElement.innerHTML = '';
+
+            for (var i = 0; i < this.deck.cards.length; ++i) {
+                var el = document.createElement('img');
+
+                el.setAttribute('src', 'hátlap.png');
+                if (i == 0) {
+                    el.style.position = 'relative';
+                }
+                else {
+                    el.style.position = 'absolute';
+                }
+                el.style.top  = -i / 4 ;
+                el.style.left = -i / 4;
+                this.displayElement.appendChild(el);
+            }
+        }
     }
 
     newGame() {
+        this.isRunning = true;
         this.player.discard();
         this.dealer.discard();
+        this.display();
     }
 
     endGame(win, message) {
         this.isRunning = false;
         if (win) {
-            // TODO: zseton növelése
+            this.player.money += 10;
         }
         else {
-            // TODO: zseton csökkentése
+            this.player.money -= 10;
         }
-        // TODO: rendes megjelenítés
-        console.log(message);
+        this.display();
     }
 
     dealersTurn() {
         if (!this.isRunning) {
             return;
         }
-        // TODO: az osztó köre
+
     }
 
     hit() {
@@ -111,10 +161,11 @@ class Game {
             return;
         }
 
-        this.player.addCard(deck.draw_one());
+        this.player.addCard(this.deck.drawOne());
         if (this.player.handValue() > 21) {
             this.endGame(false, 'Túllépted a 21-et! Vesztettél!');
         }
+        this.display();
     }
 
     stand() {
@@ -122,26 +173,31 @@ class Game {
             return;
         }
 
+        this.dealersTurn();
+
+        var pValue = this.player.handValue();
+        var dValue = this.dealer.handValue();
+        if (pValue == 21 && this.player.cards.length == 2) {
+            this.endGame(true, 'BLACKJACK!');
+        }
+        else if (pValue > dValue) {
+            this.endGame(true, 'Nyertél! Lapjaid értéke: ${pValue}.');
+        }
+        else {
+            this.endGame(false, 'Vesztettél! Lapjaid értéke: ${pValue}.');
+        }
+        this.display();
     }
 }
 
 window.onload = function () {
-    var game = new Game();
-    var hitButton =     document.getElementById('hit');
-    var standButton =   document.getElementById('stand');
+    var deckDisplay = document.getElementById('deck');
+
+    // gombok
+    var hitButton     = document.getElementById('hit');
+    var standButton   = document.getElementById('stand');
     var newGameButton = document.getElementById('newGame');
 
-    hitButton.onclick = function() {
-        alert('hello world');
-        game.hit();
-    }
-
-    standButton.onclick = function() {
-        game.stand();
-    }
-
-    newGameButton.onclick = function() {
-        game.newGame();
-    }
-
+    var game = new Game(deckDisplay, hitButton, standButton, newGameButton);
+    game.newGame();
 }
