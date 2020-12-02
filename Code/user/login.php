@@ -28,7 +28,7 @@
 			Nincs még fiókja? <a href="register.php">Regisztráció</a>
 		</p>
 	</form>
-	<a href="../menu.html"><button class="menubutton" type="submit"><span>MENÜ</span></button></a><br>
+	<a href="../menu1.html"><button class="menubutton" type="submit"><span>MENÜ</span></button></a><br>
 
 </body>
 
