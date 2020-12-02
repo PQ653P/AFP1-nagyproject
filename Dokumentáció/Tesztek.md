@@ -32,6 +32,7 @@
 | 2. | **Menü teszt**| A menü hibás linkeket tartalmazott a regisztrációs és bejelentkezési oldalakra. A hiba ki lett javítva. |
 | 3. | **Lapok tesztje** | A játék során hibásan jelentek meg a játékos lapjai. A hiba ki lett javítva. |
 | 4. | **Login teszt**| A bejelentkezés nem működött, hibás PHP kód miatt. A hiba ki lett javítva. |
+| 5. | **Regisztráció teszt** | A regisztráció nem működött, hibás adatbázis konfiguráció miatt. A hiba ki lett javítva. |
 
 
 ## 3.4 Pusztai Dominik Tamás - PQ653P
