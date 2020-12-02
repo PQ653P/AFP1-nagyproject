@@ -10,10 +10,11 @@
 
 ### Sikeres tesztek
 
-|   |   |
+| Sorszám | Teszt neve | Leírása |
 |---|---|
-| **Árnyékolás teszt** | CSS segítségével, a szövegek árnyékolásának szerkesztése. |
-| **Gomb teszt** | CSS fájlban, a gombnak sikeres méret növelése. |
+| 1. | **Árnyékolás teszt** | CSS segítségével, a szövegek árnyékolásának szerkesztése. |
+| 2. | **Gomb teszt** | CSS fájlban, a gombnak sikeres méret növelése. |
+| 3. | **CSS teszt** | Az alkalmazás tesztelve lett, CSS-el való design-ra. |
 
 
 
