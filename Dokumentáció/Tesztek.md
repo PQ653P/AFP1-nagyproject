@@ -29,6 +29,7 @@
 | Sorszám | Teszt neve | Leírása |
 |---|---|---|
 | 1. | **Pontszámlálás teszt** | A játék során a játékos lapjainak összértékét a program hibásan számolta ki. A hiba ki lett javítva. |
+| 2. | **Menü teszt**| A menü hibás linkeket tartalmazott a regisztrációs és bejelentkezési oldalakra. A hiba ki lett javítva. |
 
 
 ## 3.4 Pusztai Dominik Tamás - PQ653P
