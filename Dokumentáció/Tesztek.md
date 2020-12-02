@@ -19,6 +19,15 @@
 
 ## 3.4 Pusztai Dominik Tamás - PQ653P
 ### Sikeres tesztek
+|   |   |
+|---|---|
+| **Regisztráció teszt** | PHPMyAdminnal való regisztrációs adatok sikeres tárolása. |
+
+
+
 
 
 ### Hibás tesztek
+|   |   |
+|---|---|
+| **Bejelentkezés teszt** | PHPMyAdmin-ban eltárolt adatok, sikertelen elérése. |
