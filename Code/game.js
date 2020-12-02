@@ -137,7 +137,7 @@ class BlackJackPlayer {
 
 class Game {
     constructor(
-        msgDisplay,
+        msgDisplay, moneyDisplay,
         deckDisplay, playerHandDisplay, dealerHandDisplay,
         hitButton, standButton, newGameButton) {
         // adattagok
@@ -149,6 +149,7 @@ class Game {
 
         // HTML tagek
         this.msgDisplay        = msgDisplay;
+        this.moneyDisplay      = moneyDisplay;
         this.deckDisplay       = deckDisplay;
         this.playerHandDisplay = playerHandDisplay;
         this.dealerHandDisplay = dealerHandDisplay;
@@ -185,6 +186,7 @@ class Game {
 
             this.dealer.displayFirst(this.dealerHandDisplay);
         }
+        this.moneyDisplay.innerHTML = `Zseton: $${this.player.money}`;
         this.deck.display(this.deckDisplay);
         this.player.displayHand(this.playerHandDisplay);
     }
@@ -276,6 +278,7 @@ window.onload = function () {
     let playerHandDisplay = document.getElementById('playerHand');
     let dealerHandDisplay = document.getElementById('dealerHand');
     let msgDisplay        = document.getElementById('message')
+    let moneyDisplay      = document.getElementById('money');
 
     // gombok
     let hitButton     = document.getElementById('hit');
@@ -284,6 +287,7 @@ window.onload = function () {
 
     let game = new Game(
         msgDisplay,
+        moneyDisplay,
         deckDisplay,
         playerHandDisplay,
         dealerHandDisplay,
