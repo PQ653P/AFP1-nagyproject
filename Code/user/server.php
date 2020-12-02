@@ -33,7 +33,7 @@
 
 			$_SESSION['username'] = $name;
 			$_SESSION['success'] = "Bejelentkeztél!";
-			header('location: index.php');
+			header('location: ../menu.html');
 		}
 
 	}
@@ -58,7 +58,7 @@
 			if ($results && mysqli_num_rows($results) == 1) {
 				$_SESSION['username'] = $name;
 				$_SESSION['success'] = "Sikeresen bejelentkeztél!";
-				header('location: index.php');
+				header('location: ../menu.html');
 			} else {
 				array_push($errors, "Hibás felhasználónév vagy jelszó");
 			}
