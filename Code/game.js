@@ -181,10 +181,10 @@ class Game {
             this.endGame(true, 'BLACKJACK!');
         }
         else if (pValue > dValue) {
-            this.endGame(true, 'Nyertél! Lapjaid értéke: ${pValue}.');
+            this.endGame(true, `Nyertél! Lapjaid értéke: ${pValue}.`);
         }
         else {
-            this.endGame(false, 'Vesztettél! Lapjaid értéke: ${pValue}.');
+            this.endGame(false, `Vesztettél! Lapjaid értéke: ${pValue}.`);
         }
         this.display();
     }
