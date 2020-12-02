@@ -191,7 +191,7 @@ class Game {
 }
 
 window.onload = function () {
-    let deckDisplay = document.getElementById('deck');
+    let deckDisplay   = document.getElementById('deck');
 
     // gombok
     let hitButton     = document.getElementById('hit');
