@@ -8,6 +8,11 @@ Ezeket a teszteket a fejlesztők hajtják végre, általában a saját részük�
 
 ## 2. Tesztelési terv hatóköre, célja:
 
+Ahogy a bevezetésben is le lett írva a tesztelés legfontosabb célja,
+hogy a fejlesztők kiszűrjék a program hibáit és azokat minnél hamarabb és minnél hatékonnyabban javítsák ki.
+A tesztelés a teljes programra, beleértve a dokumentációkra is kiterjed.
+A frontend fejlesztők a frontend részt nézik át a backend fejlesztők pedig a saját, backend részüket tesztelik le.
+
 ## 3. Tesztek
 
 Mind a 4 fejlesztőre ki lett osztva a saját részének tesztelése, esetleges hibáinak javítása.
