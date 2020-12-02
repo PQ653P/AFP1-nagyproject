@@ -103,7 +103,7 @@ class BlackJackPlayer {
         for (let i = 0; i < this.cards.length; ++i) {
             let el = document.createElement('img');
             let card = this.cards[i];
-            let fileName = `cards/${card.value}${card.suit[0]}.jpg`;
+            let fileName = `cards/${card.value}${card.suit[0]}.png`;
 
             el.setAttribute('src', fileName);
             el.setAttribute('width', `${CARD_WIDTH}px`);
@@ -117,7 +117,7 @@ class BlackJackPlayer {
         if (this.cards.length > 0) {
             let el = document.createElement('img');
             let card = this.cards[0];
-            let fileName = `cards/${card.value}${card.suit[0]}.jpg`;
+            let fileName = `cards/${card.value}${card.suit[0]}.png`;
             el.setAttribute('src', fileName);
             el.setAttribute('width', `${CARD_WIDTH}px`);
 
