@@ -14,3 +14,11 @@
 |---|---|
 | **Árnyékolás teszt** | CSS segítségével, a szövegek árnyékolásának szerkesztése. |
 | **Gomb teszt** | CSS fájlban, a gombnak sikeres méret növelése. |
+
+
+
+## 3.4 Pusztai Dominik Tamás - PQ653P
+### Sikeres tesztek
+
+
+### Sikertelen tesztek
