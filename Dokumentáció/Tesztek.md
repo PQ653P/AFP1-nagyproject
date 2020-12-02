@@ -27,6 +27,7 @@
 | 2. | **Címsor teszt** | Az alkalmazás egyes címsorai nem megfelelően jelentek meg. A hiba ki lett javítva. |
 | 3. | **Adatbázis teszt** | Az adatbázis hiányosan tárolt adatokat. A hiba ki lett javítva. |
 | 4. | **Betűszín teszt** | Az alkalmazás helyenként nem a megfelelő betűszínt használta. A hiba ki lett javítva. |
+| 5. | **CSS teszt** | Bizonyos aloldalak nem csatlakoztak rendesen a CSS lépcsőzetes stíluslap-dokumentumhoz. A hiba ki lett javítva. |
 
 
 
