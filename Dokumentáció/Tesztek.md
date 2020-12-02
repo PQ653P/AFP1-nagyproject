@@ -21,4 +21,4 @@
 ### Sikeres tesztek
 
 
-### Sikertelen tesztek
+### Hibás tesztek
