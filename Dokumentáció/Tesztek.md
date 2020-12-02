@@ -47,7 +47,13 @@
 | 1. | **Betűszín teszt** | CSS segítségével, a betűk sikeres átszínezése. |
 | 2. | **Betűstílus teszt** | CSS segítségével, a betűk stílusának sikeres megváltoztatása. |
 | 3. | **Gomb teszt** | CSS fájlban, a gombok funkcióinak megváltoztatása. |
+| 4. | ** ** |  |
 
+### Hibás tesztek
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Menü teszt** | A menü hibás linkeket tartalmazott a játék oldalára. A hiba ki lett javítva. |
 
 ## 3.4 Pusztai Dominik Tamás - PQ653P
 ### Sikeres tesztek
