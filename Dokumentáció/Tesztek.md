@@ -44,10 +44,10 @@
 
 | Sorszám | Teszt neve | Leírása |
 |---|---|---|
-| 1. | **Betűszín teszt** | CSS segítségével, a betűk sikeres átszínezése. |
+| 4. | **Gomb animáció teszt** | CSS segítségével, a animáció rendelése a gombokhoz. |
 | 2. | **Betűstílus teszt** | CSS segítségével, a betűk stílusának sikeres megváltoztatása. |
 | 3. | **Gomb teszt** | CSS fájlban, a gombok funkcióinak megváltoztatása. |
-| 4. | **Gomb animáció teszt** | CSS segítségével, a animáció rendelése a gombokhoz. |
+| 4. | **Betűszín teszt** | CSS segítségével, a betűk sikeres átszínezése. |
 | 5. | **Gomb átszínezés teszt** | CSS segítségével, a gombok sikeres átszínezése. |
 
 ### Hibás tesztek
