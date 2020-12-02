@@ -2,6 +2,10 @@
 
 ## 1. Bevezetés
 
+A tesztelés az alkalmazás fejlesztés egyik, hanem a legfontosabb mellékteendője mivel ezekből a tesztekből derül ki,
+hogy mik vannak teljesen készen, és miket kell a későbbiekben javítani.
+Ezeket a teszteket a fejlesztők hajtják végre, általában a saját részükön, hogy pontosan tudják, hogy hol keressék az esetleges hibákat.
+
 ## 2. Tesztelési terv hatóköre, célja:
 
 ## 3. Tesztek
