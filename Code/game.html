@@ -5,7 +5,6 @@
 	<title>Blackjack</title>
 </head>
 <link href="style.css" rel="stylesheet">
-<script src="game.js"></script>
 <body>
 	<form>
          <button class="menubutton" type="submit" formaction="menu.html"><span>MENÜ</span></button>
@@ -15,11 +14,11 @@
 		<h1>‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎‏‏‎ ‎Blackjack</h1>
 		<table style="width:50%">
 			<tr>
-				<th style="width:50%"><img src="pakli1.jpg" alt="Pakli" width="65%" height="50%"></th>
+				<th style="width:50%" id="deck"></th>
 				<th style="width:50%"><img src="pakli.jpg" alt="Pakli" width="65%" height="50%"></th>
 			</tr>
 			<tr>
-				<th style="width:50%">Felhúzott lapok helye</th>
+				<th style="width:50%" id="playerHand">Felhúzott lapok helye</th>
 				<th style="width:50%">
 					<button id="hit" name="hit">Lapot</button>
 					<button id="stand" name="stand">Megállás</button>
@@ -28,5 +27,6 @@
 			</tr>
 		</table>
 	</center>
+	<script src="game.js"></script>
 </body>
 </html>
