@@ -17,9 +17,9 @@ class Deck {
 
     fillDeck() {
         this.cards = [];
-        for (var i = 0; i < Card.SUITS.length; i++) {
-            for (var j = 0; j < Card.VALUES.length; j++) {
-                var card = new Card(Card.SUITS[i], Card.VALUES[j]);
+        for (let i = 0; i < Card.SUITS.length; i++) {
+            for (let j = 0; j < Card.VALUES.length; j++) {
+                let card = new Card(Card.SUITS[i], Card.VALUES[j]);
                 this.cards.push(card);
             }
         }
@@ -28,8 +28,8 @@ class Deck {
     shuffle() {
         // algoritmus forrása:
         // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-        var currentIndex = this.cards.length;
-        var temp, randomIndex;
+        let currentIndex = this.cards.length;
+        let temp, randomIndex;
 
         while (currentIndex != 0) {
             randomIndex = Math.floor(Math.random() * currentIndex);
@@ -65,9 +65,9 @@ class BlackJackPlayer {
     }
 
     handValue() {
-        var total = 0;
-        for (var i = 0; i < this.cards.length; ++i) {
-            var value = this.cards[i].value;
+        let total = 0;
+        for (let i = 0; i < this.cards.length; ++i) {
+            let value = this.cards[i].value;
             if (value != 'A') {
                 total += isNaN(value) ? 10 : value;
             }
@@ -114,8 +114,8 @@ class Game {
 
             this.displayElement.innerHTML = '';
 
-            for (var i = 0; i < this.deck.cards.length; ++i) {
-                var el = document.createElement('img');
+            for (let i = 0; i < this.deck.cards.length; ++i) {
+                let el = document.createElement('img');
 
                 el.setAttribute('src', 'hátlap.png');
                 if (i == 0) {
@@ -175,8 +175,8 @@ class Game {
 
         this.dealersTurn();
 
-        var pValue = this.player.handValue();
-        var dValue = this.dealer.handValue();
+        let pValue = this.player.handValue();
+        let dValue = this.dealer.handValue();
         if (pValue == 21 && this.player.cards.length == 2) {
             this.endGame(true, 'BLACKJACK!');
         }
@@ -191,13 +191,13 @@ class Game {
 }
 
 window.onload = function () {
-    var deckDisplay = document.getElementById('deck');
+    let deckDisplay = document.getElementById('deck');
 
     // gombok
-    var hitButton     = document.getElementById('hit');
-    var standButton   = document.getElementById('stand');
-    var newGameButton = document.getElementById('newGame');
+    let hitButton     = document.getElementById('hit');
+    let standButton   = document.getElementById('stand');
+    let newGameButton = document.getElementById('newGame');
 
-    var game = new Game(deckDisplay, hitButton, standButton, newGameButton);
+    let game = new Game(deckDisplay, hitButton, standButton, newGameButton);
     game.newGame();
 }
