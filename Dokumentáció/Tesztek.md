@@ -102,7 +102,7 @@ Mind a 4 fejlesztőre ki lett osztva a saját részének tesztelése, esetleges 
 | 2. | **Javított bejelentkezés teszt** | Az adatbázis álltal eltárolt adatok sikeres elérése, és sikeres bejelentkezés megvalósítása. | 
 | 3. | **Gombok hivatkozás teszt** | A gombok sikeres átvitele, a kiválasztott oldalra. |
 | 4. | **Megállás teszt** | A játék során, ha a játékos nem szeretne több lapot felhúzni, meg szeretne állni, akkor az osztó nem oszt neki több lapot, és azoknak a lapoknak az értékei megjelenítése. |
-
+| 5. | **Lapkérés teszt** | A játék elején 2 lapot kap a játékos, a játékos sikeresen kérhet lapot a pakliból. | 
 
 
 ### Hibás tesztek
@@ -113,3 +113,4 @@ Mind a 4 fejlesztőre ki lett osztva a saját részének tesztelése, esetleges 
 | 2. | **Játék funkció elérése teszt**  | A játék funckió elérhető akkor is, ha nem volt bejelentkeztetve a felhasználó. A hiba ki lett javítva! |
 | 3. | **Háttér teszt** | A háttér "kilógott" az oldalról, az oldal méretének változásával torzult. A hiba ki lett javítva. |
 | 4. | **Címsor teszt** | A CSS fájlban beálított címsorok kinézetének sikertelen megjelenítése. A hiba ki lett javítva. |
+| 5. | **CSS elérése teszt** | A php fájlok nem tudták elérni a css fájlt. A hiba ki lett javítva. |
