@@ -99,7 +99,7 @@ Mind a 4 fejlesztőre ki lett osztva a saját részének tesztelése, esetleges 
 | Sorszám | Teszt neve | Leírása |
 |---|---|---|
 | 1. | **Regisztráció teszt** | PHPMyAdminnal való regisztrációs adatok sikeres tárolása. |
-
+| 2. | **Javított bejelentkezés teszt** | Az adatbázis álltal eltárolt adatok sikeres elérése, és sikeres bejelentkezés megvalósítása. | 
 
 
 
@@ -109,3 +109,4 @@ Mind a 4 fejlesztőre ki lett osztva a saját részének tesztelése, esetleges 
 | Sorszám | Teszt neve | Leírása |
 |---|---|---|
 | 1. | **Bejelentkezés teszt** | PHPMyAdmin-ban eltárolt adatok, sikertelen elérése. |
+| 2. | **Játék funkció elérése teszt**  | A játék funckió elérhető akkor is, ha nem volt bejelentkeztetve a felhasználó. |
