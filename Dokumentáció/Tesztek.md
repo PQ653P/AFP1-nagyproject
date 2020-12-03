@@ -100,7 +100,7 @@ Mind a 4 fejlesztőre ki lett osztva a saját részének tesztelése, esetleges 
 |---|---|---|
 | 1. | **Regisztráció teszt** | PHPMyAdminnal való regisztrációs adatok sikeres tárolása. |
 | 2. | **Javított bejelentkezés teszt** | Az adatbázis álltal eltárolt adatok sikeres elérése, és sikeres bejelentkezés megvalósítása. | 
-
+| 3. | **Gombok hivatkozás teszt** | A gombok sikeres átvitele, a kiválasztott oldalra.
 
 
 
@@ -109,4 +109,5 @@ Mind a 4 fejlesztőre ki lett osztva a saját részének tesztelése, esetleges 
 | Sorszám | Teszt neve | Leírása |
 |---|---|---|
 | 1. | **Bejelentkezés teszt** | PHPMyAdmin-ban eltárolt adatok, sikertelen elérése. |
-| 2. | **Játék funkció elérése teszt**  | A játék funckió elérhető akkor is, ha nem volt bejelentkeztetve a felhasználó. |
+| 2. | **Játék funkció elérése teszt**  | A játék funckió elérhető akkor is, ha nem volt bejelentkeztetve a felhasználó. A hiba ki lett javítva! |
+| 3. | **Háttér teszt** | A háttér "kilógott" az oldalról, az oldal méretének változásával torzult. A hiba ki lett javítva. 
