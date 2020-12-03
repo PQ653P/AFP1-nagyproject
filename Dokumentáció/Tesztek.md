@@ -93,16 +93,19 @@ Mind a 4 fejlesztőre ki lett osztva a saját részének tesztelése, esetleges 
 
 
 ## 3.4 Pusztai Dominik Tamás - PQ653P
+
 ### Sikeres tesztek
-|   |   |
-|---|---|
-| **Regisztráció teszt** | PHPMyAdminnal való regisztrációs adatok sikeres tárolása. |
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Regisztráció teszt** | PHPMyAdminnal való regisztrációs adatok sikeres tárolása. |
 
 
 
 
 
 ### Hibás tesztek
-|   |   |
-|---|---|
-| **Bejelentkezés teszt** | PHPMyAdmin-ban eltárolt adatok, sikertelen elérése. |
+
+| Sorszám | Teszt neve | Leírása |
+|---|---|---|
+| 1. | **Bejelentkezés teszt** | PHPMyAdmin-ban eltárolt adatok, sikertelen elérése. |
