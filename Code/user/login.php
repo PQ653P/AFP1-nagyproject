@@ -1,7 +1,6 @@
 <?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Bejelentkezés</title>
 </head>
@@ -28,7 +27,7 @@
 			Nincs még fiókja? <a href="register.php">Regisztráció</a>
 		</p>
 	</form>
-	<a href="../menu1.html"><button class="menubutton" type="submit"><span>MENÜ</span></button></a><br>
+	<a href="../menu.php"><button class="menubutton" type="submit"><span>MENÜ</span></button></a><br>
 
 </body>
 

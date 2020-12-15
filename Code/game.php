@@ -3,11 +3,12 @@
 <head>
 	<meta charset ="UTF-8"/>
 	<title>Blackjack</title>
+<?php include('user/session.php'); ?>
 </head>
 <link href="style.css" rel="stylesheet">
 <body>
 	<form>
-         <button class="menubutton" type="submit" formaction="menu.html"><span>MENÜ</span></button>
+		 <button id="menubutton" class="menubutton" type="submit" formaction="menu.php"><span>MENÜ</span></button>
 	</form>
 
 	<center style="height:100%">

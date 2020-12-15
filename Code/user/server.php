@@ -33,7 +33,7 @@
 
 			$_SESSION['username'] = $name;
 			$_SESSION['success'] = "Bejelentkeztél!";
-			header('location: ../menu.html');
+			header('Location: ../menu.php');
 		}
 
 	}
@@ -56,13 +56,59 @@
 			$results = mysqli_query($db, $query);
 
 			if ($results && mysqli_num_rows($results) == 1) {
-				$_SESSION['username'] = $name;
+				$_SESSION['username'] = $username;
+				$_SESSION['password'] = $password;
 				$_SESSION['success'] = "Sikeresen bejelentkeztél!";
-				header('location: ../menu.html');
+				header('location: ../menu.php');
 			} else {
 				array_push($errors, "Hibás felhasználónév vagy jelszó");
+				header('Location: login.php');
 			}
 		}
 	}
 
-?>
+
+	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+		$data = json_decode(file_get_contents('php://input'), true);
+		if ($data && array_key_exists('username', $data)
+		          && array_key_exists('password', $data)) {
+			$username = $data['username'];
+			$password = $data['password'];
+			if (array_key_exists('balance', $data)) {
+				$balance = $data['balance'];
+				$query = "UPDATE user SET balance='$balance' WHERE name='$username' and password='$password'";
+				$result = mysqli_query($db, $query);
+				if ($result && mysqli_num_rows($result) == 1) {
+					$response = array(
+						'status' => 'ok'
+					);
+				}
+				else {
+					$response = array(
+						'status' => 'error'
+					);
+				}
+			}
+			else {
+				$query = "SELECT balance FROM user WHERE name='$username' and password='$password'";
+				$result = mysqli_query($db, $query);
+
+
+				if ($result && mysqli_num_rows($result) == 1) {
+					$balance = $result->fetch_row()[0];
+					$response = array(
+						'balance' => $balance
+					);
+				}
+			}
+			header('Content-Type: application/json');
+			echo json_encode($response);
+		}
+	}
+
+	if (isset($_POST['action']) && $_POST['action'] == 'logout') {
+		unset($_SESSION['username']);
+		unset($_SESSION['password']);
+		session_destroy();
+		header('Location: ../menu.php');
+	}
