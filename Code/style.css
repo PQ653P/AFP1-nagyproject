@@ -71,7 +71,7 @@ body{
 }
 
 .szoveg{
-	font-family: Cambria Math; 
+	font-family: Cambria Math;
 	color: white;
 	font-size: 18px;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -79,8 +79,8 @@ body{
 
 .keszitok{
 	text-decoration: underline;
-	font-weight: bold;  
-	color: blue;	
+	font-weight: bold;
+	color: red;
 	font-size: 25px;
 }
 
