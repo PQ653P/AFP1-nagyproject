@@ -283,49 +283,47 @@ class Game {
     }
 
     getStartingBalance() {
-        let instance = this;
-        let xhttp = new XMLHttpRequest();
-        xhttp.open('POST', 'user/server.php', true);
-        xhttp.setRequestHeader('Content-Type', 'application/json');
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                let data = JSON.parse(this.responseText);
-                instance.balance = parseInt(data['balance']);
-                instance.isBalanceSyncronized = true;
-                instance.display();
-            }
-        };
-        var params = {
+        let _data = {
             username: username,
             password: password
         };
-        xhttp.send(JSON.stringify(params));
+
+        fetch('user/server.php', {
+            method: 'POST',
+            body: JSON.stringify(_data),
+            headers: {'Content-Type': 'application/json; charset=UTF-8'}
+        })
+        .then(response => response.json())
+        .then(json => {
+            this.balance = json.balance;
+            this.isBalanceSyncronized = true;
+            this.display();
+        })
+        .catch(err => console.log(err));
     }
 
     updateBalance() {
-        let instance = this;
-        let xhttp = new XMLHttpRequest();
-        xhttp.open('POST', 'user/server.php', true);
-        xhttp.setRequestHeader('Content-Type', 'application/json');
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                let data = JSON.parse(this.responseText);
-                if (data['status'] == 'ok') {
-                    console.log('Egyenleg szinkronizálva.');
-                    instance.isBalanceSyncronized = false;
-                }
-                else {
-                    console.log('AJAX hiba');
-                }
-            }
-        };
-        var params = {
+        let _data = {
             username: username,
             password: password,
             balance: this.balance
+        }
 
-        };
-        xhttp.send(JSON.stringify(params));
+        fetch('user/server.php', {
+            method: 'POST',
+            body: JSON.stringify(_data),
+            headers: {'Content-Type': 'application/json; charset=UTF-8'}
+        })
+        .then(response => response.json())
+        .then(json => {
+            if (json.status == 'ok') {
+                this.isBalanceSyncronized = true;
+            }
+            else {
+                console.log('REST API hiba');
+            }
+        })
+        .catch(err => console.log(err));
     }
 }
 
