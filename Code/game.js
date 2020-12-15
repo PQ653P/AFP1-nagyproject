@@ -279,9 +279,6 @@ class Game {
 
     menu() {
         this.updateBalance();
-        // while (!this.isBalanceSyncronized) {
-        //     ;
-        // }
         window.location.replace('menu.php');
     }
 
