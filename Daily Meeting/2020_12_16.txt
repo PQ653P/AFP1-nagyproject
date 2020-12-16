@@ -5,4 +5,8 @@ Lehóczky Csaba:
 -Végső tesztek futattása.
 
 Koplányi Balázs:
--Dokumentáció végleges átnevezése a leadás előtt.
+-Dokumentáció végleges átnézése a leadás előtt.
+
+Pusztai Dominik Tamás:
+-Backend végleges átnézése a leadás előtt.
+-Végső tesztek futtatása.
