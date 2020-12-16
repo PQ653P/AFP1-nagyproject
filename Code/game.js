@@ -138,7 +138,8 @@ class Game {
     constructor(
         msgDisplay, moneyDisplay,
         deckDisplay, playerHandDisplay, dealerHandDisplay,
-        hitButton, standButton, newGameButton, menuButton) {
+        hitButton, standButton, newGameButton, menuButton,
+        betSelect) {
         // adattagok
         this.deck   = new Deck();
         this.player = new BlackJackPlayer();
@@ -158,6 +159,7 @@ class Game {
         this.standButton       = standButton;
         this.newGameButton     = newGameButton;
         this.menuButton        = menuButton;
+        this.betSelect         = betSelect;
 
         // eventek
         this.hitButton.onclick     = (() => this.hit());
@@ -219,10 +221,10 @@ class Game {
         this.showMessage(message);
         this.isRunning = false;
         if (win) {
-            this.balance += 10;
+            this.balance += parseInt(this.betSelect.value);
         }
         else {
-            this.balance -= 10;
+            this.balance -= parseInt(this.betSelect.value);
         }
         if (this.deck.length < 10) {
             this.showMessage('Keverés...');
@@ -341,6 +343,8 @@ window.onload = function () {
     let newGameButton = document.getElementById('newGame');
     let menuButton    = document.getElementById('menubutton');
 
+    let betSelect     = document.getElementById('bet');
+
     let game = new Game(
         msgDisplay,
         moneyDisplay,
@@ -350,7 +354,8 @@ window.onload = function () {
         hitButton,
         standButton,
         newGameButton,
-        menuButton
+        menuButton,
+        betSelect
     );
     game.showMessage('Új játék indításához kattints az "Új kör" gombra.');
     game.display();

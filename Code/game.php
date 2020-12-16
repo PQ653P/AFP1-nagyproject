@@ -26,6 +26,8 @@
 					<button id="hit" name="hit">Lapot</button>
 					<button id="stand" name="stand">Megállás</button>
 					<button id="newGame" name="newGame">Új kör</button>
+					<label for="bet">Tét:</label>
+					<input id="bet" name="bet" type="number" value="10">
 				</td>
 			</tr>
 		</table>

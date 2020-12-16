@@ -79,7 +79,7 @@
 				$balance = $data['balance'];
 				$query = "UPDATE user SET balance='$balance' WHERE name='$username' and password='$password'";
 				$result = mysqli_query($db, $query);
-				if ($result && mysqli_num_rows($result) == 1) {
+				if ($result || mysqli_num_rows($result) == 1) {
 					$response = array(
 						'status' => 'ok'
 					);
