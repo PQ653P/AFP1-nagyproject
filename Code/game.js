@@ -1,4 +1,4 @@
-const CARD_WIDTH = 150;
+const CARD_WIDTH = 100;
 
 class Card {
     constructor(suit, value) {
@@ -269,10 +269,10 @@ class Game {
             this.endGame(true, `Nyertél! Az osztó túllépte a 21-et!`);
         }
         else if (pValue > dValue) {
-            this.endGame(true, `Nyertél! Lapjaid értéke: ${pValue}.<br/>Az osztóé: ${dValue}`);
+            this.endGame(true, `Nyertél! Lapjaid értéke: ${pValue}.<br/> Az osztóé: ${dValue}`);
         }
         else {
-            this.endGame(false, `Vesztettél! Lapjaid értéke: ${pValue}. Az osztóé: ${dValue}`);
+            this.endGame(false, `Vesztettél! Lapjaid értéke: ${pValue}.  Az osztóé: ${dValue}`);
         }
         this.display();
     }
