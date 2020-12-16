@@ -10,9 +10,11 @@
 
 	<form method="post" action="login.php">
 
+		<center>
+		
 		<?php include('errors.php'); ?>
 
-		<center><div class="input-group">
+		<div class="input-group">
 			<label>Felhasználónév</label>
 			<input type="text" name="username">
 		</div>

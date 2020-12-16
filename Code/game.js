@@ -144,7 +144,7 @@ class Game {
         this.deck   = new Deck();
         this.player = new BlackJackPlayer();
         this.dealer = new BlackJackPlayer();
-        this.balance = 100;
+        this.balance = 1000;
         this.deck.shuffle();
         this.isRunning = false;
         this.isBalanceSyncronized = true;

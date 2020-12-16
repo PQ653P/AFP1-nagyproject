@@ -17,22 +17,22 @@
 		<?php include('errors.php'); ?>
 		
 		<div class="input-group">
-			<label>Felhasználónév</label>
+			<label>Felhasználónév:</label>
 			<input type="text" name="username" value="<?php echo $name; ?>">
 		</div>
 		<div class="input-group">
-			<label>E-mail cím</label>
+			<label>E-mail cím:</label>
 			<input type="email" name="email" value="<?php echo $email; ?>">
 		</div>
 		<div class="input-group">
-			<label>Jelszó</label>
+			<label>Jelszó:</label>
 			<input type="password" name="password">
 		</div>
 		<div class="input-group">
 			<button type="submit" class="menubutton" name="register">Regisztráció</button>
 		</div>
 		<p>
-			Már van fiókja? <a href="login.php">Bejelentkezés</a>
+			Van már fiókja? <a href="login.php">Bejelentkezés</a>
 		</p>
 	</form>
 	</center>
