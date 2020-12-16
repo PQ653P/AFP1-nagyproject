@@ -1,7 +1,7 @@
 2020.12.16.
 
 Lehóczky Csaba:
--HTML és CSS végső áttekintése a leadás előtt.
+-PHP és CSS végső áttekintése a leadás előtt.
 -Végső tesztek futattása.
 
 Koplányi Balázs:
