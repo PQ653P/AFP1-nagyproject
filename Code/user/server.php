@@ -8,18 +8,19 @@
 
 	$db = mysqli_connect('localhost', 'root', '', 'afp_hnft_poker');
 
-
 	if (isset($_POST['register'])) {
 
 		$name = mysqli_real_escape_string($db, $_POST['username']);
 		$email = mysqli_real_escape_string($db, $_POST['email']);
 		$password = mysqli_real_escape_string($db, $_POST['password']);
 		//$password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
-
+		
+		
 		if (empty($name)) { array_push($errors, "Felhasználónév szükséges!"); }
 		if (empty($email)) { array_push($errors, "E-mail cím szükséges!"); }
 		if (empty($password)) { array_push($errors, "Jelszó megadása szükséges!"); }
-
+		
+		
 		// Jelszó megerősítéshez szükséges, ha szeretnénk belerakni.
 		//if ($password_1 != $password_2) {
 			//array_push($errors, "A két jelszó nem egyezik!");

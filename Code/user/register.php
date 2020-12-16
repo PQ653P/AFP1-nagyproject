@@ -13,8 +13,9 @@
 
 	<form method="post" action="register.php">
 
-		<?php include('errors.php'); ?>
 		<center>
+		<?php include('errors.php'); ?>
+		
 		<div class="input-group">
 			<label>Felhasználónév</label>
 			<input type="text" name="username" value="<?php echo $name; ?>">
@@ -35,7 +36,7 @@
 		</p>
 	</form>
 	</center>
-		<a href="../menu.php"><button class="menubutton" type="submit"><span>MENÜ</span></button></a><br>
+		<a href="../menu.php"><button class="menubutton" type="submit"><span>MENÜ</span></button></a>
 	
 	
 </body>
