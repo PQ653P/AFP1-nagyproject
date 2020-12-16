@@ -14,6 +14,7 @@
 	<form method="post" action="register.php">
 
 		<?php include('errors.php'); ?>
+		<center>
 		<div class="input-group">
 			<label>Felhasználónév</label>
 			<input type="text" name="username" value="<?php echo $name; ?>">
@@ -33,7 +34,9 @@
 			Már van fiókja? <a href="login.php">Bejelentkezés</a>
 		</p>
 	</form>
-		<a href="../menu1.html"><button class="menubutton" type="submit"><span>MENÜ</span></button></a><br>
+	</center>
+		<a href="../menu.php"><button class="menubutton" type="submit"><span>MENÜ</span></button></a><br>
+	
 	
 </body>
 

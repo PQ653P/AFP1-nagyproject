@@ -12,7 +12,7 @@
 
 		<?php include('errors.php'); ?>
 
-		<div class="input-group">
+		<center><div class="input-group">
 			<label>Felhasználónév</label>
 			<input type="text" name="username">
 		</div>
@@ -26,9 +26,11 @@
 		<p>
 			Nincs még fiókja? <a href="register.php">Regisztráció</a>
 		</p>
+		
 	</form>
+	</center>
 	<a href="../menu.php"><button class="menubutton" type="submit"><span>MENÜ</span></button></a><br>
-
+	
 </body>
 
 </html>
