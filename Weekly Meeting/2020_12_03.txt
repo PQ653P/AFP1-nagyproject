@@ -1,0 +1,3 @@
+2020.12.03.
+Lehóczky Csaba, Pusztai Dominik, Árvai Dániel, Koplányi Balázs:
+A projekt tesztelésének az átbeszelése, és menetének a kidolgozása, BackEnd és Frontend-en egyaránt.
