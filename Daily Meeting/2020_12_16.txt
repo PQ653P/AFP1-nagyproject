@@ -3,3 +3,6 @@
 Lehóczky Csaba:
 -HTML és CSS végső áttekintése a leadás előtt.
 -Végső tesztek futattása.
+
+Koplányi Balázs:
+-Dokumentáció végleges átnevezése a leadás előtt.
