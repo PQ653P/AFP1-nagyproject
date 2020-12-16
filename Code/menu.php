@@ -15,7 +15,7 @@
 		 		<button class="menubutton" type="submit" formaction="rules.php"><span>SZABÁLYOK</span></button></br>
 				<button class="menubutton" type="submit" formaction="user/server.php?action=logout"><span>KILÉPÉS</span></button></br>
 			<?php else: ?>
-				<button class="menubutton" type="submit" formaction="rules.html"><span>SZABÁLYOK</span></button></br>
+				<button class="menubutton" type="submit" formaction="rules.php"><span>SZABÁLYOK</span></button></br>
 		 		<button class="menubutton" type="submit" formaction="user/login.php"><span>BELÉPÉS</span></button></br>
 				<button class="menubutton" type="submit" formaction="user/register.php"><span>REGISZTRÁCIÓ</span></button>
 			<?php endif; ?>
