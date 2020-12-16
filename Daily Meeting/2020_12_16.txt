@@ -10,3 +10,4 @@ Koplányi Balázs:
 Pusztai Dominik Tamás:
 -Backend végleges átnézése a leadás előtt.
 -Végső tesztek futtatása.
+-CSS véglegesítése.
